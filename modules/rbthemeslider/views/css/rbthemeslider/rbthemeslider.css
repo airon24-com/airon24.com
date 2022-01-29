@@ -1,0 +1,984 @@
+/**
+* 2007-2021 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2021 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+
+    .rb-wp-container  .rb-container {
+        clear: both;
+        visibility: hidden;
+        position: relative;
+        max-width: 100%;
+    }
+
+    .rb-wp-container  .rb-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        z-index: 30;
+    }
+
+    .rb-wp-container  .rb-wp-fullwidth-container {
+        width: 100%;
+        position: relative;
+    }
+
+    .rb-wp-container .rb-wp-fullwidth-helper {
+        position: absolute;
+    }
+
+
+
+/* Layers */
+
+    .rb-layers,
+    .rb-slide-backgrounds,
+    .rb-background-videos,
+    .rb-bg-video-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        -o-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+
+    .rb-wrapper {
+        padding: 0 !important;
+        visibility: visible !important;
+        border: 0 !important;
+        z-index: 1;
+    }
+
+    .rb-background-videos {
+        z-index: 1;
+    }
+
+    .rb-bg-video-overlay {
+        z-index: 21;
+        background-repeat: repeat;
+        background-position: center center;
+    }
+
+    .rb-slide-backgrounds {
+        z-index: 2;
+    }
+
+    .rb-layers {
+        z-index: 35;
+    }
+
+    .rb-parallax,
+    .rb-in-out,
+    .rb-z {
+        position: absolute !important;
+    }
+
+    .rb-parallax,
+    .rb-z {
+        width: 0 !important;
+        height: 0 !important;
+        top: 0 !important;
+        left: 0 !important;
+        bottom: auto !important;
+        right: auto !important;
+        display: block !important;
+        overflow: visible !important;
+    }
+
+    .rb-in-out {
+        display: none;
+    }
+
+    .rb-loop, .rb-clip {
+        position: absolute !important;
+        display: block !important;
+    }
+
+    .rb-parallax,
+    .rb-in-out,
+    .rb-loop,
+    .rb-z {
+        background: none !important;
+    }
+
+    .rb-parallax,
+    .rb-bg-wrap,
+    .rb-loop {
+        margin: 0 !important;
+    }
+
+    .rb-wrapper > .rb-layer,
+    .rb-wrapper > a > .rb-layer
+    .rb-wrapper > .rb-bg {
+        line-height: normal;
+        white-space: nowrap;
+        word-wrap: normal;
+        margin-right: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .rb-wrapper > .rb-layer,
+    .rb-wrapper > a > .rb-layer {
+        position: static !important;
+        -o-transform: translateZ(1px);
+        -ms-transform: translateZ(1px);
+        -moz-transform: translateZ(1px);
+        -webkit-transform: translateZ(1px);
+        transform: translateZ(1px);
+    }
+
+    .rb-bg-wrap,
+    .rb-bg-outer {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .rb-bg-wrap {
+        display: none;
+    }
+
+    .rb-bg-outer {
+        overflow: hidden !important;
+    }
+
+    .rb-wrapper > a.rb-layer-link {
+        cursor: pointer !important;
+        display: block !important;
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 10;
+        -o-transform: translateZ(100px);
+        -ms-transform: translateZ(100px);
+        -moz-transform: translateZ(100px);
+        -webkit-transform: translateZ(100px);
+        transform: translateZ(100px);
+        background: transparent !important;
+    }
+
+
+
+/* GUI */
+
+    .rb-gui-element {
+        z-index: 40;
+    }
+
+    .rb-loading-container {
+        position: absolute !important;
+        display: none;
+        left: 50% !important;
+        top: 50% !important;
+    }
+
+    .rb-loading-indicator {
+        margin: 0 auto;
+    }
+
+
+
+    /* Navigation */
+
+        .rb-bottom-slidebuttons {
+            text-align: left;
+        }
+
+        .rb-bottom-nav-wrapper,
+        .rb-below-thumbnails {
+            height: 0;
+            position: relative;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .rb-below-thumbnails {
+            display: none;
+        }
+
+        .rb-bottom-nav-wrapper a,
+        .rb-nav-prev,
+        .rb-nav-next {
+            outline: none;
+        }
+
+        .rb-bottom-slidebuttons {
+            position: relative;
+        }
+
+        .rb-bottom-slidebuttons,
+        .rb-nav-start,
+        .rb-nav-stop,
+        .rb-nav-sides {
+            position: relative;
+        }
+
+        .rb-nothumb {
+            text-align: center !important;
+        }
+
+        .rb-link,
+        .rb-link:hover {
+            position: absolute !important;
+            width: 100% !important;
+            height: 100% !important;
+            left: 0 !important;
+            top: 0 !important;
+        }
+
+        .rb-link {
+            display: none;
+        }
+
+        .rb-link-on-top {
+            z-index: 999999 !important;
+        }
+
+        .rb-link, .rb-wrapper > a > * {
+            background-image: none;
+        }
+
+        .rb-bottom-nav-wrapper,
+        .rb-thumbnail-wrapper,
+        .rb-nav-prev,
+        .rb-nav-next {
+            visibility: hidden;
+        }
+
+
+
+    /* Timers */
+
+        .rb-bar-timer {
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: white;
+            border-bottom: 2px solid #555;
+            opacity: .55;
+            top: 0;
+        }
+
+        .rb-circle-timer {
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            opacity: .65;
+            display: none;
+        }
+
+        .rb-container .rb-circle-timer,
+        .rb-container .rb-circle-timer * {
+            box-sizing: border-box !important;
+        }
+
+        .rb-ct-half {
+            border: 4px solid white;
+        }
+
+        .rb-ct-left,
+        .rb-ct-right {
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .rb-ct-left,
+        .rb-ct-right {
+            position: absolute;
+        }
+
+        .rb-ct-left {
+            left: 0;
+        }
+
+        .rb-ct-right {
+            left: 50%;
+        }
+
+        .rb-ct-rotate {
+            width: 200%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        .rb-ct-left .rb-ct-rotate,
+        .rb-ct-right .rb-ct-hider,
+        .rb-ct-right .rb-ct-half {
+            left: 0;
+        }
+
+        .rb-ct-right .rb-ct-rotate,
+        .rb-ct-left .rb-ct-hider,
+        .rb-ct-left .rb-ct-half {
+            right: 0;
+        }
+
+        .rb-ct-hider,
+        .rb-ct-half {
+            position: absolute;
+            top: 0;
+        }
+
+        .rb-ct-hider {
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .rb-ct-half {
+            width: 200%;
+            height: 100%;
+        }
+
+        .rb-ct-center {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            border: 4px solid black;
+            opacity: 0.2;
+        }
+
+        .rb-ct-half,
+        .rb-ct-center {
+            border-radius: 100px;
+            -moz-border-radius: 100px;
+            -webkit-border-radius: 100px;
+        }
+
+        .rb-slidebar-container {
+            margin: 10px auto;
+        }
+
+        .rb-slidebar-container,
+        .rb-slidebar {
+            position: relative;
+        }
+
+        .rb-progressbar,
+        .rb-slidebar-slider-container {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .rb-progressbar {
+            width: 0;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .rb-slidebar-slider-container {
+            z-index: 2;
+        }
+
+        .rb-slidebar-slider {
+            position: static !important;
+            cursor: pointer;
+        }
+
+        /* slidebar default dark skin */
+
+        .rb-slidebar {
+            height: 10px;
+            background-color: #ddd;
+        }
+
+        .rb-slidebar,
+        .rb-progressbar {
+            border-radius: 10px;
+        }
+
+        .rb-progressbar {
+            background-color: #bbb;
+        }
+
+        .rb-slidebar-slider-container {
+            top: 50%;
+        }
+
+        .rb-slidebar-slider {
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: #999;
+        }
+
+        /* slidebar default light skin */
+
+        .rb-slidebar-light .rb-slidebar {
+            height: 8px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-top: 1px solid #ccc;
+        }
+
+        .rb-slidebar-light .rb-slidebar,
+        .rb-slidebar-light .rb-progressbar {
+            border-radius: 10px;
+        }
+
+        .rb-slidebar-light .rb-progressbar {
+            background-color: #eee;
+        }
+
+        .rb-slidebar-light .rb-slidebar-slider-container {
+            top: 50%;
+        }
+
+        .rb-slidebar-light .rb-slidebar-slider {
+            width: 18px;
+            height: 18px;
+            border-radius: 20px;
+            background-color: #eee;
+            border: 1px solid #bbb;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #999;
+        }
+
+
+
+
+    /* Thumbnails */
+
+        .rb-tn {
+            display: none !important;
+        }
+
+        .rb-thumbnail-hover {
+            display: none;
+            position: absolute;
+            left: 0;
+        }
+
+        .rb-thumbnail-hover-inner {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+
+        .rb-thumbnail-hover-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .rb-thumbnail-hover-img {
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .rb-thumbnail-hover img {
+            max-width: none !important;
+            position: absolute;
+            display: inline-block;
+            visibility: visible !important;
+            left: 50%;
+            top: 0;
+        }
+
+        .rb-thumbnail-hover span {
+            left: 50%;
+            top: 100%;
+            width: 0;
+            height: 0;
+            display: block;
+            position: absolute;
+            border-left-color: transparent !important;
+            border-right-color: transparent !important;
+            border-bottom-color: transparent !important;
+        }
+
+        .rb-thumbnail-wrapper {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .rb-thumbnail {
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .rb-thumbnail-inner,
+        .rb-thumbnail-slide-container {
+            width: 100%;
+        }
+
+        .rb-thumbnail-slide-container {
+            overflow: hidden !important;
+            position: relative;
+        }
+
+        .rb-thumbnail-slide {
+            text-align: center;
+            white-space: nowrap;
+            float: left;
+            position: relative;
+        }
+
+        .rb-thumbnail-slide a {
+            overflow: hidden;
+            display: inline-block;
+            width: 0;
+            height: 0;
+            position: relative;
+        }
+
+        .rb-thumbnail-slide img {
+            max-width: none !important;
+            max-height: 100% !important;
+            height: 100%;
+            visibility: visible !important;
+        }
+
+        .rb-touchscroll {
+            overflow-x: auto !important;
+        }
+
+
+
+    /* Shadow */
+
+        .rb-shadow {
+            display: none;
+            position: absolute;
+            z-index: 10 !important;
+            top: 100%;
+            width: 100%;
+            left: 0;
+            overflow: hidden !important;
+            visibility: hidden;
+        }
+
+        .rb-shadow img {
+            width: 100% !important;
+            height: auto !important;
+            position: absolute !important;
+            left: 0 !important;
+            bottom: 0 !important;
+        }
+
+
+
+/* Media */
+
+    .rb-media-layer {
+        overflow: hidden;
+    }
+
+    .rb-vpcontainer,
+    .rb-videopreview {
+        width : 100%;
+        height : 100%;
+        position : absolute;
+        left : 0;
+        top : 0;
+        cursor : pointer;
+    }
+
+    .rb-videopreview {
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .rb-videopreview {
+        z-index: 1;
+    }
+
+    .rb-playvideo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .rb-autoplay .rb-playvideo {
+        display: none !important;
+    }
+
+
+
+/* Mobile features */
+
+    .rb-forcehide {
+        display: none !important;
+    }
+
+
+
+/* YourLogo */
+
+    .rb-yourlogo {
+        position: absolute;
+        z-index: 50;
+    }
+
+
+
+/* Slide transitions */
+
+    /* .rb-lt-container */
+    .rb-slide-transition-wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+    }
+
+    .rb-slide-transition-wrapper,
+    .rb-slide-transition-wrapper * {
+        text-align: left !important;
+    }
+
+    .rb-slide-transition-tile {
+        position: relative;
+        float: left;
+    }
+
+    .rb-slide-transition-tile img {
+        visibility: visible;
+        margin: 0 !important;
+    }
+
+    .rb-curtiles {
+        overflow: hidden;
+    }
+
+    .rb-curtiles,
+    .rb-nexttiles {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .rb-curtile, .rb-nexttile {
+        overflow: hidden;
+        width: 100% !important;
+        height: 100% !important;
+        -o-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+
+    .rb-nexttile {
+        display: none;
+    }
+
+    .rb-3d-container {
+        position: relative;
+        overflow: visible !important;
+        -ms-perspective: none !important;
+        -moz-perspective: none !important;
+        -webkit-perspective: none !important;
+        perspective: none !important;
+    }
+
+    .rb-3d-box {
+        position: absolute;
+    }
+
+    .rb-3d-box div {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        background-color: #888;
+    }
+
+    .rb-3d-box .rb-3d-top,
+    .rb-3d-box .rb-3d-bottom {
+        background-color: #555;
+    }
+
+    .rb-slide-transition-wrapper,
+    .rb-slide-transition-tile {
+        -ms-perspective: 1500px;
+        -moz-perspective: 1500px;
+        -webkit-perspective: 1500px;
+        perspective: 1500px;
+    }
+
+    .rb-slide-transition-tile,
+    .rb-3d-box,
+    .rb-curtiles,
+    .rb-nexttiles {
+        -ms-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .rb-curtile,
+    .rb-nexttile,
+    .rb-3d-box,
+    .rb-3d-box div {
+        -ms-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+
+
+
+/* Misc. */
+
+    .rb-visible {
+        overflow: visible !important;
+    }
+
+    .rb-unselectable {
+        user-select: none;
+        -o-user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .rb-overflow-hidden {
+        overflow: hidden;
+    }
+
+    .rb-overflowx-hidden {
+        overflow-x: hidden;
+    }
+
+    .rb-overflow-visible {
+        overflow: visible !important;
+    }
+
+    .rb-overflowy-hidden {
+        overflow-y: hidden;
+    }
+
+    .rb-hidden {
+        width: 0px !important;
+        height: 0px !important;
+        position: absolute;
+        left: -5000px;
+        top: -5000px;
+        z-index: -1;
+        overflow: hidden !important;
+        visibility: hidden !important;
+        display: block !important;
+    }
+
+    .rb-slide {
+        display: block !important;
+        visibility: hidden !important;
+        position: absolute !important;
+        overflow: hidden;
+        top: 0 !important;
+        left: 0 !important;
+        bottom: auto !important;
+        right: auto !important;
+        background: none;
+        border: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .rb-slide > .rb-layer,
+    .rb-slide > .rb-l,
+    .rb-slide > .rb-bg,
+    .rb-slide > a > .rb-layer,
+    .rb-slide > a > .rb-l,
+    .rb-slide > a > .rb-bg {
+        position: absolute !important;
+        white-space: nowrap;
+    }
+
+    .rb-fullscreen {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .rb-fullscreen .rb-container {
+        background-color: black;
+        margin: 0 auto !important;
+    }
+
+    .rb-fullscreen .rb-fullscreen-wrapper {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        background-color: black;
+        overflow: hidden !important;
+        position: relative !important;
+    }
+
+    .rb-fullscreen .rb-fullscreen-wrapper .rb-container,
+    .rb-fullscreen .rb-fullscreen-wrapper .rb-wp-container {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%,-50%) !important;
+    }
+
+    .rb-layer .split-item {
+        font-weight: inherit !important;
+        font-family: inherit !important;
+        font-size: inherit;
+        color: inherit;
+    }
+
+/* Notification */
+
+    .rb-notification {
+        position: relative;
+        margin: 10px auto;
+        padding: 10px 10px 15px 88px;
+        border-radius: 5px;
+        background: #de4528;
+        color: white !important;
+        font-family: 'Open Sans', arial, sans-serif !important;
+    }
+
+    .rb-notification a {
+        color: white !important;
+        text-decoration: underline !important;
+    }
+
+    .rb-notification-logo {
+        position: absolute;
+        top: 16px;
+        left: 17px;
+        width: 56px;
+        height: 56px;
+        font-size: 49px;
+        line-height: 53px;
+        border-radius: 56px;
+        background-color: white;
+        color: #de4528;
+        font-style: normal;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .rb-notification strong {
+        color: white !important;
+        display: block;
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: normal !important;
+    }
+
+    .rb-notification span {
+        display: block;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: justify !important;
+    }
+
+
+
+/* Device Responsiveness */
+
+@media screen and (max-width: 767px) {
+    .rb-container .rb-layers > .rb-hide-on-phone,
+    .rb-container .rb-background-videos .rb-hide-on-phone video,
+    .rb-container .rb-background-videos .rb-hide-on-phone audio,
+    .rb-container .rb-background-videos .rb-hide-on-phone iframe {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .rb-container .rb-layers > .rb-hide-on-tablet,
+    .rb-container .rb-background-videos .rb-hide-on-tablet video,
+    .rb-container .rb-background-videos .rb-hide-on-tablet audio,
+    .rb-container .rb-background-videos .rb-hide-on-tablet iframe {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .rb-container .rb-layers > .rb-hide-on-desktop,
+    .rb-container .rb-background-videos .rb-hide-on-desktop video,
+    .rb-container .rb-background-videos .rb-hide-on-desktop audio,
+    .rb-container .rb-background-videos .rb-hide-on-desktop iframe {
+        display: none !important;
+    }
+}
+
+.rb-container .rb-background-videos .rb-vpcontainer {
+    z-index: 10;
+}
+
+.rb-container .rb-background-videos .rb-videopreview {
+    background-size: cover !important;
+}
+
+.rb-container .rb-background-videos video,
+.rb-container .rb-background-videos audio,
+.rb-container .rb-background-videos iframe {
+    position: relative;
+    z-index: 20;
+}
+
+
+
+/* Hacks */
+
+    @media (transform-3d), (-ms-transform-3d), (-webkit-transform-3d) {
+        #rb-test3d {
+            position: absolute;
+            left: 9px;
+            height: 3px;
+        }
+    }

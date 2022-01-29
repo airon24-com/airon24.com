@@ -1,0 +1,289 @@
+/***************************************************
+  Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/* line 85, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/partials/_variables.scss */
+.container {
+  max-width: 1440px;
+  width: auto;
+  margin: auto;
+}
+
+/* line 90, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/partials/_variables.scss */
+.container-large {
+  max-width: 1750px;
+  width: auto;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* line 5, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.layout-1 .rb-widget-heading .rb-heading-title.page-title {
+  margin: 130px 0 0;
+}
+
+/* line 7, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.layout-1 .rb-widget-heading .rb-heading-title.page-title .title_block {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 1199px) {
+  /* line 15, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-1 .rb-widget-heading .rb-heading-title.page-title {
+    margin: 90px 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 22, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-1 .rb-widget-heading .rb-heading-title.page-title {
+    margin: 70px 0 0;
+  }
+}
+
+/* line 29, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.layout-2 {
+  margin: 130px 0 40px;
+}
+
+/* line 31, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.layout-2 .rb-widget-wrap {
+  background-image: url(../../../../assets/img/modules/rbthemedream/img/home5-banner1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 350px 0;
+}
+
+/* line 38, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.layout-2 .rb-text-editor {
+  font-size: 24px;
+  color: #000;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 47, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.layout-2 .rb-text-editor .rb-subtitle {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* line 52, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.layout-2 .rb-text-editor .rb-title {
+  font-size: 72px;
+  color: #000;
+  font-weight: 400;
+  margin: 15px auto;
+  width: 50%;
+}
+
+/* line 59, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.layout-2 .rb-text-editor .btn {
+  border: 1px solid #000;
+  color: #000;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 19px 20px;
+  min-width: 200px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1199px) {
+  /* line 29, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-2 {
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 74, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-2 .rb-widget-wrap {
+    padding: 220px 0;
+  }
+  /* line 77, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-2 .rb-text-editor {
+    width: 100%;
+  }
+  /* line 79, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-2 .rb-text-editor .rb-subtitle {
+    font-size: 16px;
+  }
+  /* line 82, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-2 .rb-text-editor .rb-title {
+    font-size: 38px;
+  }
+  /* line 85, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-2 .rb-text-editor .btn {
+    font-size: 14px;
+    min-width: 180px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 29, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-2 {
+    margin-top: 70px;
+  }
+  /* line 95, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-2 .rb-text-editor .rb-title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 102, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-2 .rb-text-editor .rb-subtitle {
+    font-size: 14px;
+  }
+  /* line 105, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-2 .rb-text-editor .rb-title {
+    font-size: 30px;
+  }
+  /* line 108, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-2 .rb-text-editor .btn {
+    font-size: 12px;
+    min-width: 150px;
+  }
+}
+
+/* line 116, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.layout-3 {
+  padding: 77px 0;
+  margin-top: 140px;
+}
+
+/* line 119, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.layout-3::before {
+  content: "";
+  background: #f5f5f5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1199px) {
+  /* line 116, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-3 {
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 116, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-3 {
+    padding: 60px 0;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 138, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-3 .rb-widget-icon-box .rb-icon-box-wrapper {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 145, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.layout-4 {
+  margin-bottom: 50px;
+}
+
+/* line 148, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.layout-4 .rb-widget-heading .rb-heading-title.page-title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 120px 0 30px;
+}
+
+@media (max-width: 991px) {
+  /* line 148, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-4 .rb-widget-heading .rb-heading-title.page-title {
+    font-size: 40px;
+    margin: 100px 0 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 148, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-4 .rb-widget-heading .rb-heading-title.page-title {
+    font-size: 35px;
+    margin: 70px 0 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* line 148, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-4 .rb-widget-heading .rb-heading-title.page-title {
+    font-size: 22px;
+  }
+}
+
+/* line 164, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.layout-4 .rb-widget-heading .rb-heading-title.page-title .bold {
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  /* line 145, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .layout-4 {
+    margin-bottom: 0;
+  }
+}
+
+/* line 174, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.rb-button.rb-size-large {
+  background: #222222;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 20px 50px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+  /* line 174, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .rb-button.rb-size-large {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 174, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+  .rb-button.rb-size-large {
+    padding: 15px 30px;
+  }
+}
+
+/* line 188, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-5.scss */
+.rb-button.rb-size-large:hover {
+  background: #f68e56;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=home-5.css.map */

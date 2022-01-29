@@ -1,0 +1,1317 @@
+/***************************************************
+  Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/* line 85, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/partials/_variables.scss */
+.container {
+  max-width: 1440px;
+  width: auto;
+  margin: auto;
+}
+
+/* line 90, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/partials/_variables.scss */
+.container-large {
+  max-width: 1750px;
+  width: auto;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* line 3, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.rb-ajax-loading {
+  display: none;
+}
+
+/* line 6, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.cssload-speeding-wheel {
+  width: 49px;
+  height: 49px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  -webkit-animation: cssload-spin 575ms infinite linear;
+  -moz-animation: cssload-spin 575ms infinite linear;
+  animation: cssload-spin 575ms infinite linear;
+}
+
+@keyframes cssload-spin {
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes cssload-spin {
+  100% {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes cssload-spin {
+  /* line 29, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+  100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes cssload-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes cssload-spin {
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* line 46, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.rb-loading {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* line 53, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.rb-loading #loadFacebookG {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 61, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#loadFacebookG {
+  width: 125px;
+  height: 125px;
+  display: block;
+  position: relative;
+  margin: auto;
+}
+
+/* line 68, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.facebook_blockG {
+  background-color: white;
+  border: 3px solid black;
+  float: left;
+  height: 89px;
+  margin-left: 7px;
+  width: 23px;
+  opacity: 0.1;
+  animation-name: bounceG;
+  -o-animation-name: bounceG;
+  -ms-animation-name: bounceG;
+  -webkit-animation-name: bounceG;
+  -moz-animation-name: bounceG;
+  animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+  -ms-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-direction: normal;
+  -o-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  transform: scale(0.7);
+  -o-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+}
+
+/* line 102, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#blockG_1 {
+  animation-delay: 0.45s;
+  -o-animation-delay: 0.45s;
+  -ms-animation-delay: 0.45s;
+  -webkit-animation-delay: 0.45s;
+  -moz-animation-delay: 0.45s;
+}
+
+/* line 109, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#blockG_2 {
+  animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+}
+
+/* line 116, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#blockG_3 {
+  animation-delay: 0.75s;
+  -o-animation-delay: 0.75s;
+  -ms-animation-delay: 0.75s;
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+}
+
+@keyframes bounceG {
+  0% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.7);
+    opacity: 0.1;
+  }
+}
+
+@-o-keyframes bounceG {
+  0% {
+    -o-transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    -o-transform: scale(0.7);
+    opacity: 0.1;
+  }
+}
+
+@-ms-keyframes bounceG {
+  /* line 146, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+  0% {
+    -ms-transform: scale(1.2);
+    opacity: 1;
+  }
+  /* line 151, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+  100% {
+    -ms-transform: scale(0.7);
+    opacity: 0.1;
+  }
+}
+
+@-webkit-keyframes bounceG {
+  0% {
+    -webkit-transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.7);
+    opacity: 0.1;
+  }
+}
+
+@-moz-keyframes bounceG {
+  0% {
+    -moz-transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: scale(0.7);
+    opacity: 0.1;
+  }
+}
+
+/* line 179, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.send-wishlist {
+  display: none;
+}
+
+/******* STYLE AJAX LOADING **********/
+/* line 184, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.cssload-double-torus {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  border: 4px double;
+  border-radius: 50%;
+  border-color: transparent rgba(0, 0, 0, 0.9) rgba(0, 0, 0, 0.9);
+  -webkit-animation: cssload-spin 690ms infinite linear;
+  -moz-animation: cssload-spin 690ms infinite linear;
+  animation: cssload-spin 690ms infinite linear;
+}
+
+@keyframes cssload-spin {
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes cssload-spin {
+  100% {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes cssload-spin {
+  /* line 206, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+  100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes cssload-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes cssload-spin {
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/******* END STYLE AJAX LOADING **********/
+/****** SALE POPUP **********/
+/* line 226, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.sale-popup {
+  position: fixed;
+  visibility: hidden;
+  padding: 0;
+  background: #fff;
+  top: auto !important;
+  bottom: 0;
+  right: auto;
+  z-index: 100;
+  left: 20px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-box-shadow: 0 0 10px #333;
+  -webkit-box-shadow: 0 0 10px #333;
+  -o-box-shadow: 0 0 10px #333;
+  -ms-box-shadow: 0 0 10px #333;
+  box-shadow: 0 0 10px #333;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+}
+
+@media (max-width: 991px) {
+  /* line 226, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+  .sale-popup {
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* line 226, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+  .sale-popup {
+    left: 10px;
+    right: 10px;
+    max-width: 300px;
+  }
+}
+
+/* line 249, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.sale-popup.slideUp {
+  visibility: visible;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+/* line 254, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.sale-popup.box-center {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+/* line 257, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.sale-popup.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 260, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.sale-popup .sale-popup-timeago {
+  display: block;
+  color: #666666;
+  font-size: 0.85714em;
+  line-height: normal;
+}
+
+/* line 266, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.sale-popup .button-close {
+  top: 0px;
+  cursor: pointer;
+  position: absolute;
+  font-family: "FontAwesome";
+  width: 20px;
+  height: 20px;
+  background: #56cfe1;
+  color: white;
+  font-size: 11px;
+  line-height: 20px;
+  text-align: center;
+  right: 0;
+}
+
+/* line 279, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.sale-popup .button-close::before {
+  content: "\f00d";
+}
+
+/* line 283, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.sale-popup .sale-popup-img {
+  width: 70px;
+  float: left;
+}
+
+/* line 286, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.sale-popup .sale-popup-img img {
+  max-height: 90px !important;
+}
+
+/* line 290, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.sale-popup .sale-popup-content {
+  width: calc(100% - 80px);
+  display: block;
+  padding: 0 10px;
+  float: left;
+  text-align: left;
+}
+
+@media (max-width: 480px) {
+  /* line 290, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+  .sale-popup .sale-popup-content {
+    max-width: 180px;
+  }
+}
+
+/* line 300, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.sale-popup h3 {
+  margin: 0;
+  font-size: 1em;
+  max-width: 255px;
+  font-weight: 700;
+  font-family: "Jost", sans-serif;
+  margin-bottom: 5px;
+}
+
+/* line 308, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.sale-popup h3:hover a {
+  color: #f68e56;
+}
+
+/****** END SALE POPUP **********/
+/****** POPUP **********/
+/* line 318, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.fancyBoxActive:after {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  content: "";
+}
+
+/* line 328, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.rb-popup-flex {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 334, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb_newsletter_popup {
+  max-width: 350px;
+  margin: 0 7.8%;
+}
+
+/* line 338, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-newsletter-popup {
+  background: none;
+  border: 1px solid #7c7c7c;
+  padding: 10px 20px;
+  line-height: 22px;
+  font-size: 16px;
+  color: #535353;
+  border-radius: 22px;
+  width: 100%;
+  height: 44px;
+}
+
+/* line 348, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-newsletter-popup:focus {
+  outline: 0;
+}
+
+/* line 352, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.relative {
+  position: relative;
+}
+
+/* line 355, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.rb-send-email {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border: none;
+  background: none;
+  padding: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 365, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.rb-email-alert {
+  margin-top: 10px;
+}
+
+/* line 368, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.rb-email {
+  display: none;
+  margin-top: 10px;
+  border: 1px solid #7c7c7c;
+  border-radius: 22px;
+}
+
+/****** END POPUP **********/
+/****** LOGIN FORM **********/
+/* line 378, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login > .rb-dropdown {
+  width: 320px;
+  position: fixed;
+  z-index: 999999;
+  border: none;
+  top: 0;
+  left: inherit;
+  right: 0;
+  padding: 70px 20px 50px;
+  margin: 0;
+  height: 100%;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  -moz-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  -ms-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  -o-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transform-origin: inherit;
+  -moz-transform-origin: inherit;
+  -ms-transform-origin: inherit;
+  -o-transform-origin: inherit;
+  transform-origin: inherit;
+  -webkit-animation: inherit;
+  -moz-animation: inherit;
+  animation: inherit;
+}
+
+/* line 398, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .title-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+/* line 401, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .title-wrap h4 {
+  display: inline-block;
+  cursor: pointer;
+  width: 50%;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+  font-weight: 600;
+  color: #999999;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* line 412, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .title-wrap h4.active {
+  color: #222222;
+}
+
+/* line 416, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .title-wrap .login-tab {
+  border-right: 1px solid #eeeeee;
+}
+
+/* line 420, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .rb-customer-form {
+  display: none;
+}
+
+/* line 422, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .rb-customer-form .svgic.input-icon {
+  display: none;
+}
+
+/* line 425, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .rb-customer-form .rb-check-box {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+/* line 429, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .rb-customer-form .rb-check-box input,
+#rb-login .rb-login-form .rb-customer-form .rb-check-box label {
+  display: inline-block;
+  width: auto;
+  margin-bottom: 0;
+  padding-left: 5px;
+  color: #666666;
+}
+
+/* line 438, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .rb-customer-form .register-button {
+  margin-top: 10px;
+}
+
+/* line 441, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .rb-customer-form.active {
+  display: block;
+}
+
+/* line 446, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .form-wrap .material-icons {
+  display: none;
+}
+
+/* line 451, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .icon-true input {
+  background: #FFFFFF;
+  border: 1px solid #ccc;
+  height: 50px;
+  color: #666666;
+  border-radius: 0;
+}
+
+/* line 6, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/bourbon/css3/_placeholder.scss */
+#rb-login .rb-login-form .icon-true input::-webkit-input-placeholder {
+  color: #666666;
+}
+
+/* line 6, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/bourbon/css3/_placeholder.scss */
+#rb-login .rb-login-form .icon-true input::-moz-placeholder {
+  color: #666666;
+}
+
+/* line 6, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/bourbon/css3/_placeholder.scss */
+#rb-login .rb-login-form .icon-true input:-moz-placeholder {
+  color: #666666;
+}
+
+/* line 6, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/bourbon/css3/_placeholder.scss */
+#rb-login .rb-login-form .icon-true input:-ms-input-placeholder {
+  color: #666666;
+}
+
+/* line 463, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .login-button,
+#rb-login .rb-login-form .register-button {
+  width: 100%;
+  background: #222222;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 14px;
+  height: 50px;
+  outline: 0;
+  border-radius: 4px;
+}
+
+/* line 474, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .login-button:hover,
+#rb-login .rb-login-form .register-button:hover {
+  background: #f68e56;
+}
+
+/* line 478, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-login-form .rb-logout,
+#rb-login .rb-login-form .rb-account {
+  display: block;
+}
+
+/* line 483, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-indent {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+/* line 486, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-indent::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* line 490, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-indent > a {
+  color: #222222;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 0;
+}
+
+/* line 494, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-indent > a:hover {
+  color: #f68e56;
+}
+
+/* line 497, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-indent > a i {
+  font-size: 16px;
+}
+
+/* line 502, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .my-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 505, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .my-info a {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* line 509, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .my-info a.rb-logout {
+  color: #666666;
+}
+
+/* line 511, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .my-info a.rb-logout span {
+  text-decoration: underline;
+}
+
+/* line 516, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .my-info .rb-account {
+  text-transform: uppercase;
+}
+
+/* line 519, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .my-info i {
+  font-size: 70px;
+  width: auto;
+}
+
+/* line 524, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .close-menubar {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+/* line 532, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-id-wishlist a,
+#rb-login .rb-id-compare a {
+  color: #222222;
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* line 536, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-id-wishlist a:hover,
+#rb-login .rb-id-compare a:hover {
+  color: #f68e56;
+}
+
+/* line 540, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-id-wishlist .rb-amount-inline,
+#rb-login .rb-id-compare .rb-amount-inline {
+  display: inline-block;
+}
+
+/* line 542, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-id-wishlist .rb-amount-inline:before,
+#rb-login .rb-id-compare .rb-amount-inline:before {
+  content: "(";
+  display: inline-block;
+}
+
+/* line 546, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-id-wishlist .rb-amount-inline:after,
+#rb-login .rb-id-compare .rb-amount-inline:after {
+  content: ")";
+  display: inline-block;
+}
+
+/* line 551, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login .rb-id-wishlist i,
+#rb-login .rb-id-compare i {
+  font-size: 16px;
+}
+
+/* line 556, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login #language_selector,
+#rb-login #currency_selector {
+  display: block !important;
+}
+
+/* line 559, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login #language_selector > div,
+#rb-login #currency_selector > div {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 563, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login #language_selector > div > a,
+#rb-login #currency_selector > div > a {
+  position: relative;
+  text-transform: none;
+  color: #222222;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 0;
+}
+
+/* line 569, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login #language_selector > div > a:hover,
+#rb-login #currency_selector > div > a:hover {
+  color: #f68e56;
+}
+
+/* line 572, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login #language_selector > div > a img,
+#rb-login #currency_selector > div > a img {
+  vertical-align: inherit;
+  width: 20px;
+}
+
+/* line 576, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login #language_selector > div > a .fa-money,
+#rb-login #currency_selector > div > a .fa-money {
+  font-size: 15px;
+  padding-right: 3px;
+}
+
+/* line 580, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login #language_selector > div > a .fa-angle-down,
+#rb-login #currency_selector > div > a .fa-angle-down {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  width: auto;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+/* line 589, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login #language_selector .dropdown-menu,
+#rb-login #currency_selector .dropdown-menu {
+  position: relative;
+  top: inherit;
+  width: 100%;
+  border: none;
+  padding-left: 25px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+/* line 597, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login #language_selector .dropdown-menu::before,
+#rb-login #currency_selector .dropdown-menu::before {
+  display: none;
+}
+
+/* line 603, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login.active .rb-dropdown {
+  visibility: visible;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 608, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-login.active .bg-over-lay {
+  visibility: visible;
+  opacity: 1;
+}
+
+/****** END LOGIN FORM **********/
+/****** PRODUCT REVIEW **********/
+/* line 619, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb_review .alert-info {
+  padding: 15px 20px;
+  background-color: #3d9cd2;
+  border-radius: 2px;
+  color: #fff;
+  clear: both;
+  border-left: 0.61805em solid rgba(0, 0, 0, 0.15);
+}
+
+/* line 627, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb_review .modal-header {
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 632, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb_review .modal-body {
+  padding: 0;
+}
+
+/* line 635, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb_review .btn-primary {
+  display: inline-block;
+  padding: 5px 20px;
+  margin-top: 20px;
+}
+
+/* line 641, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb_review .review .comment-text {
+  padding-left: 20px;
+}
+
+/* line 644, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb_review .review .review_button {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 575px) {
+  /* line 648, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+  #rb_review .review .review_button ul li > span {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* line 656, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb_review .review .review_button .btn {
+  padding: 3px 10px;
+  font-size: 13px;
+  text-transform: none;
+  background: #ddd;
+}
+
+/* line 661, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb_review .review .review_button .btn:hover {
+  background: #f68e56;
+  color: #FFFFFF;
+}
+
+/* line 665, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb_review .review .review_button .btn.report_btn {
+  margin-top: 10px;
+}
+
+/* line 670, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb_review .review .review_author_infos {
+  width: 100%;
+  display: inline-block;
+}
+
+/* line 677, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.cancel,
+.cancel a {
+  color: #d20000;
+}
+
+/* line 681, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.cancel:before {
+  content: "\f056";
+  font-family: "FontAwesome";
+  font-size: 14px;
+}
+
+/* line 686, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.cancel,
+.star {
+  overflow: hidden;
+  float: left;
+  margin: 0 1px 0 0;
+  width: 15px;
+  height: auto;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* line 697, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.star_content {
+  display: inline-block;
+}
+
+/* line 701, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+div.star.star_on,
+div.star.star_hover {
+  color: #fcbe32;
+}
+
+/* line 705, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+div.star {
+  color: #d8d8d8;
+}
+
+/* line 708, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+div.star:before {
+  content: "\f005";
+  font-family: "FontAwesome";
+  font-size: 12px;
+}
+
+/* line 714, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#criterions_list {
+  list-style-type: none;
+}
+
+/* line 716, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#criterions_list li {
+  margin-bottom: 10px;
+}
+
+/* line 719, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#criterions_list label {
+  display: inline;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+/* line 726, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.star a {
+  display: block;
+  position: absolute;
+  text-indent: -5000px;
+  font-size: 0;
+}
+
+/* line 733, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+sup {
+  color: #f7525a;
+}
+
+/****** END PRODUCT REVIEW **********/
+/****** PRODUCT COMPARE **********/
+/* line 741, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#module-rbthemefunction-compare .page-content,
+#module-rbthemefunction-wishlist .page-content {
+  padding: 0;
+  border: none;
+}
+
+/* line 747, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.rb-compare-table .productscompare-item {
+  width: 300px;
+}
+
+/* line 750, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.rb-compare-table .rb-remove-compare-product {
+  float: right;
+}
+
+/* line 753, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.rb-compare-table .product-availability {
+  display: none;
+}
+
+/* line 756, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.rb-compare-table .add-to-cart,
+.rb-compare-table .rb-view-button {
+  width: 100%;
+}
+
+/* line 760, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.rb-compare-table .price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
+}
+
+/* line 765, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.rb-compare-table .regular-price {
+  color: #888;
+  text-decoration: line-through;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* line 771, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.rb-compare-table .discount-percentage {
+  color: red;
+}
+
+/****** END PRODUCT COMPARE **********/
+/****** PRODUCT WISHLIST **********/
+/* line 779, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-wishlist .rb-list-wishlist {
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+/* line 785, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-wishlist .rb-list-wishlist tbody tr td:nth-child(1) {
+  position: relative;
+}
+
+/* line 788, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-wishlist .rb-list-wishlist tbody tr td .cssload-container {
+  position: absolute;
+  left: 50%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 799, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-wishlist .send-wishlist {
+  position: relative;
+}
+
+/* line 802, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-wishlist .send-wishlist .form-send-wishlist .input-group-btn {
+  position: absolute;
+  z-index: 9;
+  right: 20px;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+/* line 810, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-wishlist .send-wishlist .cssload-container {
+  position: absolute;
+  bottom: 10px;
+  left: 15%;
+}
+
+/* line 816, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-wishlist .rb-wishlist-product {
+  margin: 30px 0 0;
+}
+
+/* line 818, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-wishlist .rb-wishlist-product .rb-wishlist-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 823, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-wishlist .rb-wishlist-product .rb-wishlist-item:hover {
+  -moz-box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 826, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-wishlist .rb-wishlist-product .rb-wishlist-item .thumbnail-container {
+  margin-bottom: 0;
+}
+
+/* line 829, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-wishlist .rb-wishlist-product .rb-wishlist-item .product-title {
+  width: 100%;
+  height: 25px;
+  margin-top: 10px;
+}
+
+/* line 835, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-wishlist .rb-wishlist-product .delete-wishlist-product {
+  position: relative;
+  text-align: right;
+}
+
+/* line 838, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-wishlist .rb-wishlist-product .delete-wishlist-product .rb-wishlist-delete {
+  padding: 0;
+}
+
+/* line 841, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-wishlist .rb-wishlist-product .delete-wishlist-product .rb-ajax-loading {
+  position: absolute;
+  left: 0;
+}
+
+/* line 849, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-view-wishlist .rb-wishlist-product {
+  margin: 30px 0 0;
+}
+
+/* line 851, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-view-wishlist .rb-wishlist-product .rb-wishlistproduct-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  text-align: center;
+}
+
+/* line 857, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-view-wishlist .rb-wishlist-product .rb-wishlistproduct-item:hover {
+  -moz-box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 860, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-view-wishlist .rb-wishlist-product .rb-wishlistproduct-item .thumbnail-container {
+  margin-bottom: 0;
+}
+
+/* line 863, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-view-wishlist .rb-wishlist-product .rb-wishlistproduct-item .product-title {
+  width: 100%;
+  height: 25px;
+  margin-top: 10px;
+}
+
+/* line 868, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+#rb-view-wishlist .rb-wishlist-product .rb-wishlistproduct-item .product-price-and-shipping {
+  margin: 10px 0;
+}
+
+/****** END PRODUCT WISHLIST **********/
+/* line 876, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.footer_links {
+  clear: both;
+  margin-top: 30px;
+}
+
+/* line 879, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.footer_links .btn {
+  background: #222222;
+  color: white;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  white-space: normal;
+}
+
+/* line 885, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.footer_links .btn i {
+  font-size: 14px;
+  padding-right: 3px;
+}
+
+/* line 891, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+.footer_links li {
+  padding: 5px 0;
+  display: inline-block;
+}
+
+@media (min-width: 640px) {
+  /* line 896, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemefunction/views/css/front.scss */
+  .footer_links li.pull-xs-right {
+    float: right;
+  }
+}
+
+/*# sourceMappingURL=front.css.map */

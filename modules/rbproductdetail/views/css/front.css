@@ -1,0 +1,157 @@
+/**
+* 2007-2019 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2019 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+#rb-product-cart{
+	background: #ffffff;
+	width: 100%;
+	display: inline-flex;
+	box-shadow: 0 -1px 2px 0 rgba(50,50,50,.14);
+	left: 0;
+	z-index: 1000;
+	position: fixed;
+	height: 100px;
+	background-color: #fff;
+	padding: 5px 0;
+	transition: all .5s linear;
+}
+#rb-product-cart.rb-hidden-detail {
+	bottom: -140px;
+}
+
+#rb-product-cart.rb-active{
+	display: inline-flex;
+	bottom: 0px;
+}
+
+#rb-product-cart .container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#rb-product-cart .product-cover-img{
+	width: 70px;
+	margin-bottom: 0;
+}
+
+#rb-product-cart .product-cover-img img{
+	max-width: 100%;
+	height: auto;
+}
+
+#rb-product-cart .product-detail-name{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+#rb-product-cart .product-prices > div{
+	display: inline-block;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+#rb-product-cart .has-discount .current-price{
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+#rb-product-cart .has-discount .discount{
+	font-size: 14px;
+	display: none;
+}
+
+#rb-product-cart .product-prices .tax-shipping-delivery-label{
+	display: none;
+}
+
+#rb-product-cart .product-variants{
+	display: flex;
+	align-items: center;
+}
+
+#rb-product-cart .product-variants > .product-variants-item{
+	margin-bottom: 0;
+	margin-right: 50px;
+}
+
+#rb-product-cart .product-variants > .product-variants-item ul li{
+	margin-bottom: 0;
+}
+
+#rb-product-cart .product-actions{
+	display: flex;
+	align-items: center;
+	border: none;
+}
+
+#rb-product-cart .product-variants > .product-variants-item ul{
+	display: flex;
+	align-items: center;
+}
+
+#rb-product-cart .product-variants > .product-variants-item ul li:before{
+	display: none;
+}
+
+#rb-product-cart .product-actions .control-label{
+	display: none;
+}
+
+#rb-product-cart .rb-product-quantity{
+	display: flex;
+	align-items: center;
+}
+
+#rb-product-cart .add{
+	margin-left: 50px;
+}
+
+#rb-product-cart .add-to-cart{
+	color: white;
+	background: #f04e54;
+	padding: 13px 40px;
+	font-size: 17px;
+	font-weight: 600;
+	width: 100%;
+	height: 52px;
+	text-transform: capitalize;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+#rb-product-cart .add-to-cart i{
+	display: none;
+}
+
+@media (min-width: 992px) {
+	#product .footer-container{
+		padding-bottom: 100px;
+	}
+}

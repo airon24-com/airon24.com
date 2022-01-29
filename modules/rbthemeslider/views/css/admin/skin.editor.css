@@ -1,0 +1,68 @@
+/**
+* 2007-2021 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2021 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+.rb-skin-editor-box {
+  margin-top: 10px; }
+  .rb-skin-editor-box p {
+    margin: 0px;
+    margin-right: -5px;
+    font-weight: normal; }
+  .rb-skin-editor-box textarea {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    height: 500px; }
+  .rb-skin-editor-box .inner p {
+    margin: 5px 0px;
+    line-height: 28px; }
+  .rb-skin-editor-box p.inner {
+    padding: 5px 10px;
+    margin: 0;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    color: #555; }
+
+.rb-skin-editor-box .header {
+  border-bottom: 1px solid #ddd; }
+  .rb-skin-editor-box .header figure {
+    display: inline;
+    margin: 0;
+    color: #999;
+    font-weight: normal; }
+    .rb-skin-editor-box .header figure span {
+      margin: 0 5px; }
+  .rb-skin-editor-box .header p {
+    float: right;
+    margin-top: 5px; }
+.rb-skin-editor-box .inner {
+  padding: 0; }
+  .rb-skin-editor-box .inner p {
+    margin: 0;
+    padding: 10px;
+    border-top: 1px solid #dedede; }
+    .rb-skin-editor-box .inner p button {
+      margin-right: 10px; }

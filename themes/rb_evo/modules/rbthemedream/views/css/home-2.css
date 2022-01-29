@@ -1,0 +1,291 @@
+/***************************************************
+  Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/* line 85, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/partials/_variables.scss */
+.container {
+  max-width: 1440px;
+  width: auto;
+  margin: auto;
+}
+
+/* line 90, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/partials/_variables.scss */
+.container-large {
+  max-width: 1750px;
+  width: auto;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* line 3, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.layout-1 {
+  background: #202020;
+  padding: 140px 0 110px;
+}
+
+/* line 7, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.layout-1 .rb-widget-banner .rb-dd-banner-content {
+  text-align: center;
+  left: 50%;
+  bottom: 50%;
+  background: #FFFFFF;
+  padding: 27px 10px;
+  min-width: 65%;
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+
+/* line 19, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.layout-1 .rb-widget-banner .rb-dd-banner-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* line 24, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.layout-1 .rb-widget-banner:hover .rb-dd-banner-content {
+  visibility: visible;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* line 30, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.layout-1 .rb-button.rb-size-large {
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  margin-top: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 20px 30px;
+}
+
+@media (max-width: 1199px) {
+  /* line 3, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-1 {
+    padding: 90px 0 80px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 3, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-1 {
+    padding: 60px 0 60px;
+  }
+  /* line 45, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-1 .rb-button.rb-size-large {
+    margin-top: 20px;
+  }
+}
+
+/* line 52, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.layout-2 .rb-products-list .title_block {
+  margin-top: 140px;
+}
+
+@media (max-width: 1199px) {
+  /* line 52, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-2 .rb-products-list .title_block {
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 52, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-2 .rb-products-list .title_block {
+    margin-top: 60px;
+  }
+}
+
+/* line 65, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.layout-3 .rb-widget-prestashop-widget-Blog img {
+  width: 100%;
+}
+
+/* line 68, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.layout-3 .rb-widget-prestashop-widget-Blog .title_block {
+  margin-top: 140px;
+}
+
+@media (max-width: 1199px) {
+  /* line 68, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-3 .rb-widget-prestashop-widget-Blog .title_block {
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 68, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-3 .rb-widget-prestashop-widget-Blog .title_block {
+    margin-top: 60px;
+  }
+}
+
+/* line 77, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.layout-3 .rb-widget-prestashop-widget-Blog .blog-viewall {
+  display: block;
+}
+
+/* line 79, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.layout-3 .rb-widget-prestashop-widget-Blog .blog-viewall .btn {
+  margin-top: 90px;
+}
+
+@media (max-width: 991px) {
+  /* line 79, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-3 .rb-widget-prestashop-widget-Blog .blog-viewall .btn {
+    margin-top: 30px;
+  }
+}
+
+/* line 86, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.layout-3 .rb-widget-prestashop-widget-Blog .post-btn-more {
+  border: none;
+  padding: 0 10px;
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+  color: #222222;
+}
+
+/* line 93, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.layout-3 .rb-widget-prestashop-widget-Blog .post-btn-more::after {
+  content: "";
+  background: #f68e56;
+  width: 100%;
+  height: 12px;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+
+@media (min-width: 992px) {
+  /* line 105, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-3 .rb-widget-prestashop-widget-Blog .right-block {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #FFFFFF;
+    width: 60%;
+    height: 100%;
+  }
+  /* line 113, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-3 .rb-widget-prestashop-widget-Blog .rb-blog-desc {
+    display: none;
+  }
+  /* line 116, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-3 .rb-widget-prestashop-widget-Blog .blog-content {
+    border: 1px solid #eeeeee;
+  }
+  /* line 119, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-3 .rb-widget-prestashop-widget-Blog .blog-content:hover .right-block {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+  }
+  /* line 124, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-3 .rb-widget-prestashop-widget-Blog .rb-blog-meta {
+    height: 100%;
+    padding: 50px 40px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+  }
+  /* line 130, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-3 .rb-widget-prestashop-widget-Blog .rb-blog-meta > *:nth-child(1) {
+    order: 2;
+  }
+  /* line 133, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-3 .rb-widget-prestashop-widget-Blog .rb-blog-meta > *:nth-child(2) {
+    order: 1;
+  }
+  /* line 136, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-3 .rb-widget-prestashop-widget-Blog .rb-blog-meta > *:nth-child(3) {
+    order: 3;
+  }
+  /* line 139, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-3 .rb-widget-prestashop-widget-Blog .rb-blog-meta > *:nth-child(4) {
+    order: 4;
+  }
+  /* line 143, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-3 .rb-widget-prestashop-widget-Blog .rb-blog-meta .rb-more {
+    position: absolute;
+    bottom: 60px;
+  }
+}
+
+/* line 154, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.layout-4 .rb-widget-heading .rb-heading-title.page-title {
+  margin: 90px 0 40px;
+  padding-top: 90px;
+  border-top: 1px solid #eeeeee;
+}
+
+/* line 158, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.layout-4 .rb-widget-heading .rb-heading-title.page-title .title_block {
+  font-size: 30px;
+}
+
+@media (max-width: 1199px) {
+  /* line 154, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-4 .rb-widget-heading .rb-heading-title.page-title {
+    margin: 70px 0 40px;
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 154, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+  .layout-4 .rb-widget-heading .rb-heading-title.page-title {
+    margin: 50px 0 40px;
+    padding-top: 50px;
+  }
+}
+
+/* line 174, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.rb-widget-instagram .slick-initialized {
+  margin: 0;
+}
+
+/* line 176, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-2.scss */
+.rb-widget-instagram .slick-initialized .slick-slide {
+  padding: 0;
+}
+
+/*# sourceMappingURL=home-2.css.map */

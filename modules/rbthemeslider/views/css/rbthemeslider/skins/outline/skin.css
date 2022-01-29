@@ -1,0 +1,519 @@
+/**
+* 2007-2021 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2021 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+.rb-outline .rb-button{
+	text-decoration: none !important;
+	color: #fff;
+	background-color: rgba(0,0,0,0.1);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding: 12px 25px;
+	border: 2px solid #ffffff !important
+}
+
+.rb-outline .rb-button:hover{
+	background: #fff !important;
+	color: #444;
+}
+
+
+.rb-outline .rb-playvideo {
+	width: 50px;
+	height: 50px;
+	margin-left: -29px;
+	margin-top: -29px;
+	background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+	border: 2px solid rgba(255, 255, 255, 0.7);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.rb-outline .rb-playvideo:before {
+	position: absolute;
+	top: 16px;
+	left: 20px;
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 9px 0 9px 14px;
+	border-color: transparent transparent transparent rgba(255, 255, 255, 0.8);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	content: "";
+}
+
+.rb-outline .rb-playvideo:hover:before{
+	border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+}
+
+.rb-outline .rb-playvideo:hover {
+	background: rgba(0,0,0,1);
+	border: 2px solid rgba(255, 255, 255, 1);
+}
+
+
+.rb-outline .rb-nav-prev,
+.rb-outline .rb-nav-next {
+	-webkit-transition: background 0.15s !important;
+	-moz-transition: background 0.15s !important;
+	transition: background 0.15s !important;
+}
+
+.rb-outline .rb-nav-prev {
+	-webkit-transform-origin: 0% 50% 0;
+	-moz-transform-origin: 0% 50% 0;
+	transform-origin: 0% 50% 0;
+}
+
+.rb-outline .rb-nav-next {
+	-webkit-transform-origin: 100% 50% 0;
+	-moz-transform-origin: 100% 50% 0;
+	transform-origin: 100% 50% 0;
+}
+
+
+.rb-outline .rb-nav-prev:hover,
+.rb-outline .rb-nav-next:hover {
+	background-color: #fff;
+}
+
+.rb-outline .rb-nav-prev:before,
+.rb-outline .rb-nav-prev:after,
+.rb-outline .rb-nav-next:before,
+.rb-outline .rb-nav-next:after{
+	width: 3px;
+	height: 12px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	left: 26px;
+	top: 12px;
+	position: absolute;
+	display: block;
+	-webkit-transform: rotate(-40deg);
+	-moz-transform: rotate(-40deg);
+	transform: rotate(-40deg);
+	-webkit-transform-origin: 50% 100% 0;
+	-moz-transform-origin: 50% 100% 0;
+	transform-origin: 50% 100% 0;
+	-webkit-transition: all 0.15s !important;
+	-moz-transition: all 0.15s !important;
+	transition: all 0.15s !important;
+	content: "";
+	background-color: #fff;
+}
+
+.rb-outline .rb-nav-prev:before{
+	top: 23px;
+	left: 18px;
+	-webkit-transform-origin: 50% 0% 0;
+	-moz-transform-origin: 50% 0% 0;
+	transform-origin: 50% 0% 0;
+}
+
+.rb-outline .rb-nav-prev:after{
+	left: 18px;
+	-webkit-transform-origin: 50% 100% 0;
+	-moz-transform-origin: 50% 100% 0;
+	transform-origin: 50% 100% 0;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	transform: rotate(40deg);
+}
+
+.rb-outline .rb-nav-next:after{
+	top: 23px;
+	-webkit-transform-origin: 50% 0% 0;
+	-moz-transform-origin: 50% 0% 0;
+	transform-origin: 50% 0% 0;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	transform: rotate(40deg);
+}
+
+.rb-outline .rb-nav-prev:active:before{
+	-webkit-transform: translateX(-3px) rotate(-60deg);
+	-moz-transform: translateX(-3px) rotate(-60deg);
+	transform: translateX(-3px) rotate(-60deg);
+}
+
+.rb-outline .rb-nav-prev:active:after{
+	-webkit-transform: translateX(-3px) rotate(60deg);
+	-moz-transform: translateX(-3px) rotate(60deg);
+	transform: translateX(-3px) rotate(60deg);
+}
+
+.rb-outline .rb-nav-next:active:before{
+	-webkit-transform: translateX(3px) rotate(-60deg);
+	-moz-transform: translateX(3px) rotate(-60deg);
+	transform: translateX(3px) rotate(-60deg);
+}
+
+.rb-outline .rb-nav-next:active:after{
+	-webkit-transform: translateX(3px) rotate(60deg);
+	-moz-transform: translateX(3px) rotate(60deg);
+	transform: translateX(3px) rotate(60deg);
+}
+
+
+.rb-outline .rb-nav-prev:hover:before,
+.rb-outline .rb-nav-prev:hover:after,
+.rb-outline .rb-nav-next:hover:before,
+.rb-outline .rb-nav-next:hover:after{
+	background-color: #444;
+}
+
+
+.rb-outline .rb-nav-start{
+	position: relative;
+}
+
+.rb-outline .rb-nav-start:before {
+	position: absolute;
+	top: 2px;
+	left: 9px;
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 8px;
+	border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
+	content: "";
+}
+
+.rb-outline .rb-nav-start-active:before,
+.rb-outline .rb-nav-start:hover:before{
+	border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+}
+
+.rb-outline .rb-nav-stop {
+	position: relative;
+}
+
+.rb-outline .rb-nav-stop:before {
+	position: absolute;
+	top: 2px;
+	left: 9px;
+	display: block;
+	width: 3px;
+	height: 12px;
+	border: 2px solid rgba(255,255,255,0.7);
+	border-top: none;
+	border-bottom: none;
+	content: "";
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+
+.rb-outline .rb-nav-stop:hover:before,
+.rb-outline .rb-nav-stop-active:before {
+	border-color: rgba(255,255,255,1);
+}
+
+.rb-outline .rb-bottom-slidebuttons{
+	vertical-align: middle;
+}
+
+/* paginators background color*/
+
+.rb-outline .rb-bottom-slidebuttons a {
+	background: rgba(0,0,0,0.1);
+	border: 2px solid #fff !important;
+	margin-right: 8px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background-color 1.2s ease;
+	-moz-transition: background-color 1.2s ease;
+	transition: background-color 1.2s ease;
+}
+
+.rb-outline .rb-bottom-slidebuttons a:before{
+	font-family: "Lato", sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	line-height: 10px;
+}
+
+.rb-outline .rb-bottom-slidebuttons a.rb-nav-active,
+.rb-outline .rb-bottom-slidebuttons a:hover {
+	background: #fff;
+}
+
+.rb-outline .rb-bottom-slidebuttons a.rb-nav-active:before,
+.rb-outline .rb-bottom-slidebuttons a:hover:before{
+	color: #000;
+}
+
+
+.rb-outline .rb-nav-prev,
+.rb-outline .rb-nav-next {
+	width: 46px;
+	height: 46px;
+	z-index: 10000;
+	top: 50%;
+	margin-top: -25px;
+	background: rgba(0,0,0,0.1);
+	border: 2px solid #ffffff !important;
+	position: absolute;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.rb-outline .rb-nav-prev {
+	left: 20px;
+}
+
+.rb-outline .rb-nav-next {
+	right: 20px;
+}
+
+
+
+.rb-outline .rb-bottom-slidebuttons,
+.rb-outline .rb-bottom-slidebuttons a,
+.rb-outline .rb-nav-start,
+.rb-outline .rb-nav-stop {
+	height: 10px;
+}
+
+.rb-outline .rb-bottom-slidebuttons,
+.rb-outline .rb-bottom-slidebuttons a,
+.rb-outline .rb-nav-start,
+.rb-outline .rb-nav-stop{
+	display: inline-block;
+}
+
+.rb-outline .rb-bottom-slidebuttons,
+.rb-outline .rb-nav-start,
+.rb-outline .rb-nav-stop{
+	top: -37px;
+}
+
+.rb-outline .rb-nav-start,
+.rb-outline .rb-nav-stop {
+	width: 25px;
+	margin-right: 8px;
+	top: -33px;
+}
+
+.rb-outline .rb-bottom-slidebuttons a {
+	width: 10px;
+}
+
+.rb-outline .rb-nav-sides {
+	width: 0px;
+}
+
+.rb-outline .rb-thumbnail-hover {
+	bottom: 19px;
+	padding: 2px;
+	margin-left: 1px;
+}
+
+.rb-outline .rb-thumbnail-hover-bg {
+	background: rgba(255,255,255,1);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.rb-outline .rb-thumbnail-hover span {
+	border: 5px solid rgba(255,255,255,1);
+	margin-left: -5px;
+}
+
+.rb-outline .rb-thumbnail {
+	top: 10px;
+}
+
+.rb-outline .rb-thumbnail-inner {
+	padding: 4px;
+	margin-left: -2px;
+	background: #fff;
+}
+
+.rb-outline .rb-thumbnail-slide a {
+	margin-right: 2px;
+}
+
+.rb-outline .rb-nothumb {
+	background: #eee;
+}
+
+.rb-outline .rb-loading-container {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-left: -15px;
+	margin-top: -15px;
+	position: relative;
+	border: 4px solid rgba(0,0,0,0.7);
+	top: 50%;
+	-webkit-animation: loader 2s infinite ease;
+	-moz-animation: loader 2s infinite ease;
+	animation: loader 2s infinite ease;
+}
+
+.rb-outline .rb-loading-indicator  {
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+	-webkit-animation: loader-inner 2s infinite ease-in;
+	-moz-animation: loader-inner 2s infinite ease-in;
+	animation: loader-inner 2s infinite ease-in;
+}
+
+@-webkit-keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(180deg);
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+	}
+	75% {
+		-webkit-transform: rotate(360deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes loader {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	25% {
+		-moz-transform: rotate(180deg);
+	}
+	50% {
+		-moz-transform: rotate(180deg);
+	}
+	75% {
+		-moz-transform: rotate(360deg);
+	}
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(180deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	75% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes loader-inner {
+	0% {
+		height: 0%;
+	}
+	25% {
+		height: 0%;
+	}
+	50% {
+		height: 100%;
+	}
+	75% {
+		height: 100%;
+	}
+	100% {
+		height: 0%;
+	}
+}
+
+@-moz-keyframes loader-inner {
+	0% {
+		height: 0%;
+	}
+	25% {
+		height: 0%;
+	}
+	50% {
+		height: 100%;
+	}
+	75% {
+		height: 100%;
+	}
+	100% {
+		height: 0%;
+	}
+}
+
+@keyframes loader-inner {
+	0% {
+		height: 0%;
+	}
+	25% {
+		height: 0%;
+	}
+	50% {
+		height: 100%;
+	}
+	75% {
+		height: 100%;
+	}
+	100% {
+		height: 0%;
+	}
+}
+
+.rb-outline .rb-circle-timer {
+	top: 16px;
+	right: 16px;
+	width: 24px;
+	height: 24px;
+}
+
+.rb-outline .rb-ct-half,
+.rb-outline .rb-ct-center {
+	border-width: 2px;
+}

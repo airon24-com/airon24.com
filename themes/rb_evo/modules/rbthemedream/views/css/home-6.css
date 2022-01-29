@@ -1,0 +1,80 @@
+/***************************************************
+  Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/* line 85, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/partials/_variables.scss */
+.container {
+  max-width: 1440px;
+  width: auto;
+  margin: auto;
+}
+
+/* line 90, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/partials/_variables.scss */
+.container-large {
+  max-width: 1750px;
+  width: auto;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* line 3, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-6.scss */
+.layout-1 {
+  padding: 90px 0 0;
+}
+
+@media (max-width: 767px) {
+  /* line 7, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-6.scss */
+  .layout-1 .rb-widget-icon-box .rb-icon-box-wrapper {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 16, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-6.scss */
+.layout-2 .rb-widget-heading .rb-heading-title.page-title {
+  margin: 130px 0 60px;
+}
+
+@media (max-width: 1199px) {
+  /* line 16, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-6.scss */
+  .layout-2 .rb-widget-heading .rb-heading-title.page-title {
+    margin: 100px 0 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 16, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-6.scss */
+  .layout-2 .rb-widget-heading .rb-heading-title.page-title {
+    margin: 80px 0 40px;
+  }
+}
+
+/* line 29, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-6.scss */
+.rb-widget-instagram .slick-initialized {
+  margin: 0;
+}
+
+/* line 31, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-6.scss */
+.rb-widget-instagram .slick-initialized .slick-slide {
+  padding: 0;
+}
+
+/* line 38, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-6.scss */
+.rb-products-list .title_block {
+  font-weight: 400;
+  margin: 90px 0 20px;
+}
+
+/* line 45, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-6.scss */
+.rb-widget-heading .rb-heading-title.page-title .title_block {
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=home-6.css.map */

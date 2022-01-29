@@ -1,0 +1,243 @@
+/**
+* 2007-2021 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2021 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+
+.rb-carousel .rb-bottom-nav-wrapper {
+	margin: 10px auto;
+}
+
+.rb-carousel .rb-playvideo {
+	width: 50px;
+	height: 50px;
+	margin-left: -25px;
+	margin-top: -25px;
+}
+
+.rb-carousel .rb-playvideo,
+.rb-carousel .rb-nav-sides,
+.rb-carousel .rb-bottom-slidebuttons a,
+.rb-carousel .rb-nav-prev,
+.rb-carousel .rb-nav-next,
+.rb-carousel .rb-nav-start,
+.rb-carousel .rb-nav-stop,
+.rb-carousel .rb-fullscreen,
+.rb-carousel .rb-loading-container {
+	background-image: url(../../../../img/rbthemeslider/skins/carousel/skin.png);
+}
+
+.rb-carousel .rb-playvideo {
+	background-position: -300px -150px;
+}
+
+.rb-carousel .rb-playvideo:hover,
+.rb-carousel .rb-vpcontainer:hover .rb-playvideo {
+	background-position: -375px -150px;
+}
+
+.rb-carousel .rb-nav-prev {
+	background-position: 0px 0px;
+}
+
+.rb-carousel .rb-nav-prev:hover {
+	background-position: 0px -75px;
+}
+
+.rb-carousel .rb-nav-next {
+	background-position: -150px 0px;
+}
+
+.rb-carousel .rb-nav-next:hover {
+	background-position: -150px -75px;
+}
+
+.rb-carousel .rb-nav-start {
+	background-position: -300px 0px;
+}
+
+.rb-carousel .rb-nav-start:hover,
+.rb-carousel .rb-nav-start-active {
+	background-position: -300px -75px;
+}
+
+.rb-carousel .rb-nav-stop {
+	background-position: -450px 0px;
+}
+
+.rb-carousel .rb-nav-stop:hover,
+.rb-carousel .rb-nav-stop-active {
+	background-position: -450px -75px;
+}
+
+.rb-carousel .rb-bottom-slidebuttons a {
+	background-position: 0px -150px;
+}
+
+.rb-carousel .rb-bottom-slidebuttons a.rb-nav-active,
+.rb-carousel .rb-bottom-slidebuttons a:hover {
+	background-position: -75px -150px;
+}
+
+.rb-carousel .rb-nav-sideleft {
+	background-position: -150px -150px;
+}
+
+.rb-carousel .rb-nav-sideright {
+	background-position: -225px -150px;
+}
+
+
+
+.rb-carousel .rb-nav-prev,
+.rb-carousel .rb-nav-next {
+	width: 50px;
+	height: 50px;
+	z-index: 10000;
+	top: 50%;
+	margin-top: -22px;
+	position: absolute;
+}
+
+.rb-carousel .rb-nav-prev {
+	left: 10px;
+}
+
+.rb-carousel .rb-nav-next {
+	right: 10px;
+}
+
+
+
+.rb-carousel .rb-bottom-slidebuttons,
+.rb-carousel .rb-bottom-slidebuttons a,
+.rb-carousel .rb-nav-start,
+.rb-carousel .rb-nav-stop,
+.rb-carousel .rb-nav-sides {
+	height: 36px;
+}
+
+.rb-carousel .rb-bottom-slidebuttons,
+.rb-carousel .rb-bottom-slidebuttons a,
+.rb-carousel .rb-nav-start,
+.rb-carousel .rb-nav-stop,
+.rb-carousel .rb-nav-sides {
+	display: inline-block !important;
+}
+
+.rb-carousel .rb-nav-start,
+.rb-carousel .rb-nav-stop {
+	width: 24px;
+}
+
+.rb-carousel .rb-bottom-slidebuttons a {
+	width: 20px;
+}
+
+.rb-carousel .rb-nav-sides {
+	width: 13px;
+}
+
+
+
+.rb-carousel .rb-thumbnail-hover {
+	bottom: 45px;
+	padding: 3px;
+	margin-left: 1px;
+}
+
+.rb-carousel .rb-thumbnail-hover-bg {
+	background: #eee;
+	box-shadow: 0px 2px 12px -4px black;
+	border-radius: 4px;
+}
+
+.rb-carousel .rb-thumbnail-hover span {
+	border: 5px solid #eee;
+	margin-left: -5px;
+}
+
+
+
+.rb-carousel .rb-thumbnail {
+	top: 10px;
+}
+
+.rb-carousel .rb-thumbnail-inner {
+	padding: 4px;
+	margin-left: -4px;
+	background: #eee;
+	border-radius: 4px;
+}
+
+.rb-carousel .rb-thumbnail-slide a {
+	margin-right: 4px;
+}
+
+.rb-carousel .rb-nothumb {
+	background: #eee;
+}
+
+
+
+.rb-carousel .rb-above-thumbnails {
+	display: none;
+}
+
+.rb-carousel .rb-below-thumbnails {
+	display: block;
+	margin-top: 10px;
+}
+
+
+
+.rb-carousel .rb-loading-container {
+	width: 50px;
+	height: 50px;
+	margin-left: -25px;
+	margin-top: -22px;
+	background-position: -450px -150px;
+}
+
+.rb-carousel .rb-loading-indicator {
+	width: 22px;
+	height: 22px;
+	margin-top: 11px;
+	background-image: url(../../../../img/rbthemeslider/skins/loading.gif);
+}
+
+
+
+.rb-carousel .rb-fullscreen {
+	width: 30px;
+	height: 30px;
+	right: 10px;
+	top: 10px;
+	background-position: -525px -150px;
+}
+
+.rb-carousel .rb-fullscreen:hover {
+	background-position: -525px -190px;
+}

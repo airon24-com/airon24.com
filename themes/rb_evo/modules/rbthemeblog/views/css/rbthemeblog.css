@@ -1,0 +1,787 @@
+/***************************************************
+  Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/* line 85, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/partials/_variables.scss */
+.container {
+  max-width: 1440px;
+  width: auto;
+  margin: auto;
+}
+
+/* line 90, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/partials/_variables.scss */
+.container-large {
+  max-width: 1750px;
+  width: auto;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* line 6, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+#module-rbthemeblog-single #content-wrapper .page-header h1 {
+  font-size: 28px;
+}
+
+/* line 10, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+#module-rbthemeblog-single #content-wrapper .rbblog__post p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* line 15, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+#module-rbthemeblog-single #wrapper > .row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 18, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+#module-rbthemeblog-single #right-column {
+  order: 2;
+}
+
+/* line 21, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+#module-rbthemeblog-single .page-content {
+  border: none;
+  padding: 0;
+}
+
+/* line 25, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+#module-rbthemeblog-single #main .page-header {
+  text-align: left;
+}
+
+/* line 29, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+#module-v-single #content.card,
+#module-rbthemeblog-category #content.card,
+#module-rbthemeblog-list #content.card {
+  padding: 0;
+  background: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+}
+
+/* line 37, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__mostViewed__menu {
+  margin-top: 0.625rem;
+}
+
+/* line 40, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__mostViewed__menu li:last-child a {
+  border-bottom: none;
+}
+
+/* line 43, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__mostViewed__menu li a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  width: 100%;
+  display: inline-block;
+  margin: 0.3125rem 0 0;
+  padding-bottom: 0.1875rem;
+  font-size: 14px;
+}
+
+/* line 53, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__mostViewed__footer {
+  text-align: center;
+}
+
+/* line 55, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__mostViewed__footer .btn-primary {
+  color: white;
+}
+
+/* line 59, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing {
+  padding: 0;
+}
+
+/* line 62, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post.first-in-line {
+  clear: left;
+}
+
+/* line 65, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper {
+  background: #fff;
+  margin-bottom: 1.563rem;
+  border: 1px solid #efefef;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 70, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper:hover {
+  -moz-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.07);
+  -o-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.07);
+  -ms-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.07);
+}
+
+/* line 74, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__content {
+  padding: 20px 20px 0;
+}
+
+/* line 76, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__content .blog-headline {
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 23px;
+}
+
+/* line 81, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__content .blog_description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+/* line 89, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__content__footer {
+  margin: 0 -20px;
+  padding: 0 20px;
+  height: 60px;
+  border-top: 1px solid #efefef;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+/* line 97, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__content__footer .btn {
+  background: #222222;
+  padding: 7px 15px;
+  font-size: 14px;
+}
+
+/* line 101, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__content__footer .btn:hover {
+  background: #f68e56;
+}
+
+/* line 106, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__content__footer__category {
+  margin-left: 15px;
+}
+
+/* line 108, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__content__footer__category i {
+  color: #727272;
+}
+
+/* line 111, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__content__footer__category time,
+.rbblog__listing__post__wrapper__content__footer__category a,
+.rbblog__listing__post__wrapper__content__footer__category span {
+  position: relative;
+  top: 2px;
+  margin-left: 2px;
+  color: #727272;
+}
+
+/* line 119, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__content__footer__category .rbblog__listing__post__wrapper__footer {
+  background: #efefef;
+  padding: 0 1.25rem;
+}
+
+/* line 125, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__footer {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+/* line 130, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__footer__block {
+  padding-right: 0.763rem;
+}
+
+/* line 132, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__footer__block i {
+  color: #727272;
+  font-size: 15px;
+}
+
+/* line 136, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__footer__block span,
+.rbblog__listing__post__wrapper__footer__block time {
+  position: relative;
+  top: 2px;
+  margin-left: 2px;
+  color: #727272;
+  font-size: 14px;
+}
+
+/* line 144, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__post__wrapper__footer__block .rbblog__listing__pagination {
+  margin-top: 1.5rem;
+}
+
+/* line 148, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__listing__pagination > div {
+  color: #7a7a7a;
+}
+
+@media (max-width: 767px) {
+  /* line 152, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+  .rbblog__listing__pagination__list {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 157, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+  .rbblog__listing__pagination__list li {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 162, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+  .rbblog__listing__pagination__list li:first-child,
+  .rbblog__listing__pagination__list li:last-child {
+    display: block;
+    overflow: auto;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 170, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+  .rbblog__listing__pagination__list li:first-child a,
+  .rbblog__listing__pagination__list li:last-child a {
+    float: none;
+  }
+}
+
+/* line 177, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__postInfo ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  /* line 177, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+  .rbblog__postInfo ul {
+    display: block;
+    overflow: auto;
+  }
+}
+
+/* line 186, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__postInfo ul li {
+  color: #727272;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+@media (max-width: 991px) {
+  /* line 186, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+  .rbblog__postInfo ul li {
+    float: left;
+    width: 50%;
+  }
+}
+
+/* line 194, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__postInfo ul li > a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+/* line 198, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__postInfo ul li a {
+  color: inherit;
+}
+
+/* line 200, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__postInfo ul li a:hover {
+  text-decoration: underline;
+}
+
+/* line 204, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__postInfo ul li:last-child:after {
+  display: none;
+}
+
+/* line 207, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__postInfo ul li:after {
+  content: "";
+  height: 10px;
+  background: #cecece;
+  width: 2px;
+  margin: 0 13px;
+  display: inline-block;
+}
+
+@media (max-width: 991px) {
+  /* line 207, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+  .rbblog__postInfo ul li:after {
+    display: none;
+  }
+}
+
+/* line 218, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__postInfo ul li i {
+  color: #727272;
+  font-size: 15px;
+  margin-right: 3px;
+  width: auto;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/* line 226, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__postInfo ul li span {
+  color: #727272;
+  font-size: 13px;
+  padding: 0 3px;
+}
+
+/* line 235, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__post {
+  background: #fff;
+  margin-bottom: 60px;
+}
+
+/* line 239, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__post-featured img {
+  max-width: 100%;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+/* line 245, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__share ul {
+  list-style-type: none;
+  margin: 25px 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  /* line 245, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+  .rbblog__share ul {
+    display: block;
+  }
+}
+
+/* line 253, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__share ul li {
+  margin-right: 16px;
+}
+
+@media (max-width: 991px) {
+  /* line 253, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+  .rbblog__share ul li {
+    margin: 0 0 10px;
+  }
+  /* line 257, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+  .rbblog__share ul li .btn {
+    width: 100%;
+  }
+}
+
+/* line 265, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__featuredProducts {
+  margin-bottom: 60px;
+}
+
+/* line 267, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__featuredProducts > h2 {
+  margin-bottom: 25px;
+}
+
+/* line 271, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments {
+  margin: 30px 0;
+  padding: 30px 0;
+  border-top: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+}
+
+/* line 276, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments > h2 {
+  font-weight: 500;
+}
+
+/* line 279, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments .alert a {
+  color: inherit;
+}
+
+/* line 282, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 286, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments > ul > li {
+  padding: 1.563rem 1.25rem;
+}
+
+/* line 288, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments > ul > li:nth-child(odd) {
+  background: white;
+}
+
+/* line 291, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments > ul > li:nth-child(even) {
+  background: #f6f6f6;
+}
+
+/* line 294, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments > ul > li .rbblog__comments__authorInfo {
+  list-style-type: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  /* line 294, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+  .rbblog__comments > ul > li .rbblog__comments__authorInfo {
+    display: block;
+  }
+}
+
+/* line 302, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments > ul > li .rbblog__comments__authorInfo li {
+  font-size: 14px;
+  color: #727272;
+}
+
+/* line 305, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments > ul > li .rbblog__comments__authorInfo li:last-child:after {
+  display: none;
+}
+
+/* line 308, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments > ul > li .rbblog__comments__authorInfo li:after {
+  content: "";
+  height: 10px;
+  background: #cecece;
+  width: 2px;
+  margin: 0 18px;
+  display: inline-block;
+}
+
+@media (max-width: 991px) {
+  /* line 308, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+  .rbblog__comments > ul > li .rbblog__comments__authorInfo li:after {
+    display: none;
+  }
+}
+
+/* line 321, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments > ul > li .rbblog__comments__authorInfo__author {
+  color: #38b5d0 !important;
+  font-weight: 600;
+}
+
+/* line 325, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments > ul > li .rbblog__comments__text {
+  color: #414141;
+}
+
+/* line 327, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments > ul > li .rbblog__comments__text p {
+  color: #414141;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 336, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments-empty {
+  margin-bottom: 0;
+}
+
+/* line 338, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__comments-empty h2 {
+  font-weight: 500;
+}
+
+/* line 344, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__addComment .alert a {
+  color: inherit;
+}
+
+/* line 347, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__addComment > h2 {
+  font-weight: 500;
+}
+
+/* line 351, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__addComment__form {
+  background: #ffffff;
+  padding: 0 1.25rem;
+}
+
+@media (max-width: 991px) {
+  /* line 355, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+  .rbblog__addComment__form .form-footer .btn-primary {
+    width: 100%;
+    float: none !important;
+  }
+}
+
+/* line 362, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__seo {
+  display: none;
+}
+
+/* line 365, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__categoryInfo {
+  border-bottom: 2px solid #d6d6d6;
+  margin: 30px 0;
+}
+
+/* line 368, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__categoryInfo img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 372, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.rbblog__categoryInfo p {
+  font-size: 14px;
+  color: #727272;
+  margin: 30px 0;
+}
+
+/* line 378, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.btn-facebook {
+  -moz-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  background: #415994;
+  color: white;
+}
+
+/* line 385, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.btn-facebook i {
+  margin-right: 8px;
+  font-size: 19px;
+  position: relative;
+  top: 2px;
+}
+
+/* line 391, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.btn-facebook:hover {
+  color: white;
+  background: #203363;
+}
+
+/* line 397, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.btn-twitter {
+  -moz-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  background: #4ba0ec;
+  color: white;
+}
+
+/* line 404, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.btn-twitter i {
+  margin-right: 8px;
+  font-size: 19px;
+  position: relative;
+  top: 1px;
+}
+
+/* line 410, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.btn-twitter:hover {
+  color: white;
+  background: #2f7bbf;
+}
+
+/* line 416, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.btn-google {
+  -moz-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  background: #bd403b;
+  color: white;
+}
+
+/* line 423, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.btn-google i {
+  margin-right: 8px;
+  font-size: 19px;
+}
+
+/* line 427, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.btn-google:hover {
+  color: white;
+  background: #a12520;
+}
+
+/* line 433, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.btn-pinterest {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  background: #ae2626;
+  color: white;
+  -moz-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 440, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.btn-pinterest i {
+  margin-right: 8px;
+  font-size: 19px;
+}
+
+/* line 444, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+.btn-pinterest:hover {
+  color: white;
+  background: #8e1010;
+}
+
+/* line 451, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+#rbblogrecentposts .h1 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+/* line 455, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemeblog/views/css/rbthemeblog.scss */
+#rbblogrecentposts .h1 a {
+  float: right;
+  text-transform: none;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=rbthemeblog.css.map */

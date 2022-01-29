@@ -1,0 +1,91 @@
+/***************************************************
+  Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/* line 85, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/partials/_variables.scss */
+.container {
+  max-width: 1440px;
+  width: auto;
+  margin: auto;
+}
+
+/* line 90, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/partials/_variables.scss */
+.container-large {
+  max-width: 1750px;
+  width: auto;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/* line 3, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-1.scss */
+.layout-1 {
+  margin-top: 110px;
+}
+
+/* line 6, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-1.scss */
+.layout-1 .rb-widget-banner .rb-dd-banner-content {
+  bottom: 0;
+  height: 100%;
+  padding: 70px 0 0;
+}
+
+/* line 11, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-1.scss */
+.layout-1 .rb-widget-banner .rb-button-link {
+  position: absolute;
+  bottom: 70px;
+}
+
+@media (max-width: 1199px) {
+  /* line 3, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-1.scss */
+  .layout-1 {
+    margin-top: 60px;
+  }
+  /* line 19, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-1.scss */
+  .layout-1 .rb-widget-banner .rb-dd-banner-content {
+    padding: 30px 0 0;
+  }
+  /* line 22, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-1.scss */
+  .layout-1 .rb-widget-banner .rb-button-link {
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 1199px) {
+  /* line 3, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-1.scss */
+  .layout-1 {
+    margin-top: 30px;
+  }
+  /* line 30, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-1.scss */
+  .layout-1 .rb-widget-banner .rb-dd-banner-content {
+    padding: 20px 0 0;
+  }
+  /* line 33, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-1.scss */
+  .layout-1 .rb-widget-banner .rb-button-link {
+    bottom: 30px;
+    font-size: 12px;
+  }
+}
+
+/* line 42, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-1.scss */
+.layout-blog .rb-heading-title {
+  margin: 90px 0 60px;
+  padding-top: 90px;
+  border-top: 1px solid #eeeeee;
+}
+
+@media (max-width: 1199px) {
+  /* line 42, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/modules/rbthemedream/views/css/home-1.scss */
+  .layout-blog .rb-heading-title {
+    padding-top: 60px;
+  }
+}
+
+/*# sourceMappingURL=home-1.css.map */

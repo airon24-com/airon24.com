@@ -1,0 +1,89 @@
+/* line 1, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/error.scss */
+#body {
+  background-color: #F7F7F7;
+}
+
+/* line 4, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/error.scss */
+#layout-error {
+  text-align: center;
+  margin: 50px 0 0 0;
+  background-color: #fff;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 1200px) {
+  /* line 12, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/error.scss */
+  #layout-error {
+    margin: 126px 0 0 0;
+    padding: 50px;
+  }
+}
+
+/* line 15, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/error.scss */
+#layout-error .logo {
+  margin: 0 0 31px 0;
+  text-align: center;
+}
+
+/* line 18, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/error.scss */
+#layout-error h1 {
+  font: 24px sans-serif;
+  color: #333;
+  padding: 0 0 14px 0;
+  margin: 0 0 19px 0;
+}
+
+/* line 23, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/error.scss */
+#layout-error h2 {
+  font: 20px sans-serif;
+  color: #333;
+  padding: 0 0 14px 0;
+  margin: 0 0 19px 0;
+}
+
+/* line 28, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/error.scss */
+#layout-error .page-content {
+  font: 16px sans-serif;
+  color: #555454;
+  text-align: center;
+}
+
+/* line 33, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/error.scss */
+#layout-error {
+  padding: 50px 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  /* line 39, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/error.scss */
+  #layout-error {
+    width: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 42, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/error.scss */
+  #layout-error {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 45, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/error.scss */
+  #layout-error {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 48, ../../xampp/htdocs/rubiktheme/rb_evo/themes/rb_evo/_dev/css/error.scss */
+  #layout-error {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/*# sourceMappingURL=error.css.map */

@@ -1,0 +1,96 @@
+/**
+* 2007-2021 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2021 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+.rb-about-img {
+  position: absolute;
+  height: 65px !important;
+  top: 10px;
+  border: 0 !important; }
+
+.rb-start-button {
+  border: none !important;
+  background-color: #ff3300 !important;
+  border-radius: 40px !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  text-transform: uppercase;
+  display: block !important;
+  margin: 20px auto 25px auto !important;
+  width: 200px !important;
+  line-height: 46px !important;
+  text-align: center; }
+
+.rb-about-page .rb-share-template {
+  position: absolute;
+  top: 174px;
+  right: 0px;
+  z-index: 10; }
+  .rb-about-page .rb-share-template a:last-child {
+    margin-right: 0px; }
+
+.about-heading {
+  white-space: nowrap; }
+
+.about-heading,
+.about-text {
+  margin-left: 90px !important;
+  margin-right: 0px !important;
+  position: relative;
+  z-index: 10; }
+
+.about-text {
+  min-height: auto !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important; }
+
+.rb-about-page .km-tabs-content ul {
+  margin-left: 30px;
+  list-style-type: square; }
+  .rb-about-page .km-tabs-content ul li {
+    margin-top: 5px; }
+  .rb-about-page .km-tabs-content ul li.gap {
+    margin-top: 20px; }
+
+.rb-about-page .km-tabs-content p {
+  margin: 2px 30px 10px 0; }
+
+.five-col .col {
+  width: 20%;
+  float: left; }
+  .five-col .col h3 {
+    margin-left: 10px; }
+
+.km-about-news-sections {
+  text-align: left; }
+  .km-about-news-sections.right {
+    text-align: right; }
+  .km-about-news-sections div {
+    margin: 20px; }
+  .km-about-news-sections h2 {
+    margin: 0;
+    text-align: inherit;
+    font-size: 22px; }
