@@ -57,6 +57,18 @@ TODO: LISTA ZADAŃ
     - nie kopiowania plików
     - podłączyć analitykę do każdej strony (wszystko)
 
+Simple Minimalist For Your Home Interior (jako 3 projekt / montaż itd. ... )
+
+Our Latest And Featured Projects - dodać do strony kontaktau
+
+https://themetechmount.com/html/inoterior/demo2/homepage-2.html
+
+
+Strona jako sitemap: http://paul-themes.com/html/arquito/demo/home-grid-background.html
+
+Dodać do strony głównej:
+(jako opis produktów sprzedawanych - kategorię)
+https://preview.themeforest.net/item/azzuro-interior-architect-html5-template/full_screen_preview/24324065
 
 
 
@@ -68,3 +80,5 @@ TODO: LISTA ZADAŃ
         $("body").append("<style>body * {display:none;}</style>");
     }
 });
+
+zrobić przyciski next/prev: http://paul-themes.com/html/arquito/demo/project-detail-image.html
