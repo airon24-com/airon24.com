@@ -56,3 +56,15 @@ TODO: LISTA ZADAŃ
     - nie pobierania zdjeć 
     - nie kopiowania plików
     - podłączyć analitykę do każdej strony (wszystko)
+
+
+
+
+    $(document).ready(function () {
+    var homeUrl = document.location.origin;
+    if ((homeUrl !== "http://meduza.hellodigi.ru") && (homeUrl !== "https://meduza.hellodigi.ru") && (homeUrl !== "https://themeforest.net")) {
+        $("body").empty();
+        $("body").html('<h1 style="margin-bottom: 30px; font-size: 40px; font-weight: 600; padding: 50px 20px 0; display: block;">Intellectual Property Policy</h1><p style="display: block; font-size: 20px; padding: 0 20px;">This template is fee-paying. You have copied it to your device illegally. Template author has been notified about your actions. Please delete these files and make a purchase.</p>');
+        $("body").append("<style>body * {display:none;}</style>");
+    }
+});
