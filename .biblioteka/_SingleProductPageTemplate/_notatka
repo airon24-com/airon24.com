@@ -50,6 +50,20 @@ TODO: LISTA ZADAŃ
         Opinie
 
 
+ <base href="https://greenmax.pl/" />
+
+ jest do takich linków
+
+  <img src="//cdn.shopify.com/s/files/1/2974/4858/products/01_fd3377eb-f540-4574-9719-227fded13a9f.png?v=1636352941"
+                                alt="Ledger Nano X" class="product-details__main-image" id="main_image">
+
+
+    <script integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4="
+        data-source-attribution="shopify.dynamic-checkout" defer="defer"
+        src="//cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js"
+        crossorigin="anonymous"></script>
+
+
     Zrobić globalne zabpieczenia do: 
     - nie pobierania zdjeć 
     - nie kopiowania plików

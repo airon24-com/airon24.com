@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <link href="css_theme.css" rel="stylesheet"
+        type="text/css" media="all" />
+
+    <script src="js_vendor.js"></script>
+
+</head>
+
+<div class="ldg-container no-top-spacing" id="page-product-ledger-nano-x">
+    <section class="flexbox cover-product-under-header">
+        <div class="photo-gallery" data-type-product="cryptocurrency-wallets">
+            <div id="product-photo-gallery">
+                <div class="swiper swiper-main-photo pictures-container" id="swiper-main-photo">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-1">
+                            <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/01_fd3377eb-f540-4574-9719-227fded13a9f.png?v=1636352941"
+                                alt="Ledger Nano X" class="product-details__main-image" id="main_image">
+                        </div>
+                        <div class="swiper-slide slide-2">
+                            <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/02_a0486472-5de0-4210-a6f7-0b385d3d8386.png?v=1636378908"
+                                alt="Ledger Nano X">
+                        </div>
+                        <div class="swiper-slide slide-3">
+                            <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/ledger-nano-x-semi-closed.png?v=1636380166"
+                                alt="Ledger Nano X">
+                        </div>
+                        <div class="swiper-slide slide-4">
+                            <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/04.png?v=1636378909"
+                                alt="Ledger Nano X">
+                        </div>
+                        <div class="swiper-slide slide-5">
+                            <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/05.png?v=1636378908"
+                                alt="Ledger Nano X">
+                        </div>
+                        <div class="swiper-slide video-mobile" id="player-video-6">
+                            <iframe src="https://www.youtube-nocookie.com/embed/NGIjVKY-hvk" frameborder="0"
+                                allow="autoplay" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide video-mobile" id="player-video-7">
+                            <iframe src="https://www.youtube-nocookie.com/embed/5xkqIwFWMoM" frameborder="0"
+                                allow="autoplay" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide video-mobile" id="player-video-8">
+                            <iframe src="https://www.youtube-nocookie.com/embed/Fm0sd5eUoNM" frameborder="0"
+                                allow="autoplay" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper" id="thumb-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/01_fd3377eb-f540-4574-9719-227fded13a9f_large.png?v=1636352941"
+                                alt="Ledger Nano X" id="main_image_thumb">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/02_a0486472-5de0-4210-a6f7-0b385d3d8386_large.png?v=1636378908"
+                                alt="Ledger Nano X">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/ledger-nano-x-semi-closed_large.png?v=1636380166"
+                                alt="Ledger Nano X">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/04_large.png?v=1636378909"
+                                alt="Ledger Nano X">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/05_large.png?v=1636378908"
+                                alt="Ledger Nano X">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/thub02_large.png?v=1624467577"
+                                alt="https://www.youtube-nocookie.com/embed/NGIjVKY-hvk">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/thb01_large.png?v=1624467736"
+                                alt="https://www.youtube-nocookie.com/embed/5xkqIwFWMoM">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/thb03_large.png?v=1624467750"
+                                alt="https://www.youtube-nocookie.com/embed/Fm0sd5eUoNM">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function (event) {
+                        var windowWidth = $(document).width();
+                        if (windowWidth > 992) {
+                            slidesPerView = 6;
+                        } else {
+                            slidesPerView = 10;
+                        }
+                        var thumbswiper = new Swiper("#thumb-container", {
+                            centeredSlides: false,
+                            centeredSlidesBounds: true,
+                            slidesPerView: 6,
+                            spaceBetween: 10,
+                            watchOverflow: true,
+                            watchSlidesVisibility: true,
+                            watchSlidesProgress: true,
+                            direction: 'vertical'
+                        });
+                        // Big pictures
+                        var swiper2 = new Swiper("#swiper-main-photo", {
+                            spaceBetween: 0,
+                            direction: 'vertical',
+                            watchOverflow: true,
+                            watchSlidesVisibility: true,
+                            watchSlidesProgress: true,
+                            preventInteractionOnTransition: true,
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: true,
+                            },
+                            thumbs: {
+                                swiper: thumbswiper,
+                            },
+                        }); // change on swipe
+                        swiper2.on('transitionStart', function () {
+                            if (
+                                $(
+                                    ".swiper-main-photo .swiper-slide.slide-1.swiper-slide-active"
+                                )
+                                .find("img").attr("id") == "main_image"
+                            ) {
+                                $(".photo-gallery").removeClass("change-background-color");
+                            } else {
+                                $(".photo-gallery").addClass("change-background-color");
+                            }
+                        });
+                    });
+                </script>
+
+            </div>
+        </div>
+        <div class="detail-of-product">
+            <div>
+                <p class="label">Ledger</p>
+                <h1 class="margin-xs"> Nano X</h1>
+                <p><span style="font-weight: 400;">Secure, buy, exchange and grow your crypto assets with our
+                        new Bluetooth-enabled hardware wallet. With all your crypto in one place, you’re in
+                        total control of your assets.</span></p> <!-- @TODO: à dynamiser -->
+                <form class="add-to-cart__form">
+                    <div class="add-to-cart">
+                        <div class="add-to-cart-wrapper margin-s price-variant-color-container">
+                            <div class="add-to-cart__quantity-select-container">
+                                <div class="add-to-cart__price-container">
+                                    <label> Price </label> <span
+                                        class="flow-price flow-price__item add-to-cart__price--original flow-localized "
+                                        flow-variant="14382701248554" flow-selector="prices.item.label"
+                                        flow-default="€119,00">686,00 PLN
+                                    </span> <span flow-id="includes">
+                                        <span class="flow-price flow-price__includes flow-localized "
+                                            flow-variant="14382701248554"
+                                            flow-selector="prices.item.includes.label">Includes VAT
+                                        </span></span> </div>
+                            </div> <!-- swatch -->
+                            <div></div> <!-- end swatch -->
+                        </div>
+                        <div class="add-to-cart-wrapper quantity-buttons-container">
+                            <div class="quantity-container">
+                                <label>
+                                    Quantity
+                                    <!-- Display stocks for fashion products --> </label>
+                                <div class="add-to-cart__box">
+                                    <div class="select">
+                                        x <span></span> <i class="icon-chevron-bottom"></i>
+                                    </div>
+                                    <ul class="no-bullet add-to-cart__quantity-list">
+                                        <li data-value="1"
+                                            class=" add-to-cart__quantity-list-item add-to-cart__quantity-list-item--selected">
+                                            1
+                                        </li>
+                                        <li data-value="2" class=" add-to-cart__quantity-list-item ">
+                                            2
+                                        </li>
+                                        <li data-value="3" class=" add-to-cart__quantity-list-item ">
+                                            3
+                                        </li>
+                                        <li data-value="4" class=" add-to-cart__quantity-list-item ">
+                                            4
+                                        </li>
+                                        <li data-value="5" class=" add-to-cart__quantity-list-item ">
+                                            5
+                                        </li>
+                                        <li data-value="6" class=" add-to-cart__quantity-list-item ">
+                                            6
+                                        </li>
+                                        <li data-value="7" class=" add-to-cart__quantity-list-item ">
+                                            7
+                                        </li>
+                                        <li data-value="8" class=" add-to-cart__quantity-list-item ">
+                                            8
+                                        </li>
+                                    </ul>
+                                </div>
+                                <input class="add-to-cart__quantity-select-input" name="quantity" type="hidden" />
+                            </div>
+                            <div class="add-to-cart__ctas">
+                                <!-- bis email me notice-->
+                                <div class="margin-xxs super-small-text is-warning back-in-stock-warn"
+                                    style="display: none;" id="bis-notice">
+                                    <i class="fas fa-info-circle"></i> Back soon! Notify me when the product is
+                                    available
+                                </div>
+                                <input class="add-to-cart__product" type="hidden" value="1829667700778"
+                                    name="product_id" />
+                                <input class="add-to-cart__variant" type="hidden" value="14382701248554" name="id" />
+                                <!-- Attach BIS here for swatch trigger --> <input
+                                    class="add-to-cart__submit button secondary" type="submit" value="Add to cart"
+                                    id="bis-with-variant" />
+                                <!--<input class="button__main--outline buy-now-btn" type="button" value="Buy now">-->
+                                <div class="add-to-cart__error"></div>
+                            </div>
+                        </div>
+                        <div class="add-to-cart__error"></div>
+                    </div>
+                </form> <!-- Free shipping. Or not. mobile -->
+                <p><i class="icon-plane"></i> Free shipping</p> <br>
+                <hr class="clear margin-s">
+                <div class="flexbox reviews-score">
+                    <div class="margin-xxs">
+                        <div class="yotpo bottomLine" data-product-id="1829667700778"></div>
+                    </div>
+                    <p class="js-view-all-reviews-btn read-more align-right" data-product-url="/products/ledger-nano-x">
+                        Read more reviews</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function (event) {
+                /*
+                var swiper = new Swiper('.swiper-container-gallery-product', {
+                  spaceBetween: 0,
+                  pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                  },
+                  zoom: {
+                    maxRatio: 5,
+                  },
+                });
+                
+                // Gallery product
+                $('#thumb-container .thumb-item > *').click(function() {
+                  var urlCurrentImg = $(this).attr('src');
+                });
+                */
+                $('.product__atc--fixed').hide();
+                $(window).scroll(function (event) {
+                    var scroll = $(window).scrollTop();
+                    var ctaPosition = $('.add-to-cart__ctas').offset().top;
+                    if ((scroll > ctaPosition)) {
+                        $('.product__atc--fixed').fadeIn(200);
+                    } else {
+                        $('.product__atc--fixed').fadeOut(200);
+                    }
+                });
+            });
+        </script>
+        <div class="product__atc product__atc--fixed only__mobile">
+            <form action="/cart/add" class="add-to-cart__form">
+                <div class="add-to-cart add-to-cart--fixed">
+                    <!-- <div class="add-to-cart__price-container add-to-cart__price-container--fixed add-to-cart__price-container--no-sale initial-no-sale-js">-->
+                    <div class="add-to-cart__price-container add-to-cart__price-container--fixed">
+                        <div class="add-to-cart__price">
+                        </div>
+                        <div class="add-to-cart__price">
+                            <span class="flow-price flow-price__item add-to-cart__price--original flow-localized "
+                                flow-variant="14382701248554" flow-selector="prices.item.label"
+                                flow-default="€119,00">686,00 PLN
+                            </span> </div>
+                        <div class="add-to-cart__caption" flow-id="includes"> <span
+                                class="flow-price flow-price__includes flow-localized " flow-variant="14382701248554"
+                                flow-selector="prices.item.includes.label">Includes VAT
+                            </span>
+                        </div>
+                    </div>
+                    <input class="add-to-cart__quantity-select-input" name="quantity" type="hidden" value="1">
+                    <input class="add-to-cart__variant subbar__variant" type="hidden" value="14382701248554"
+                        name="id" />
+                    <div
+                        class="product-details__shipping-prompt product-details__shipping-prompt--no-shipping flow-hidden">
+                        Shipping to your country is currently unavailable</div>
+                    <input class="add-to-cart__submit add-to-cart__submit--fixed button primary" type="submit"
+                        value="Add to cart">
+                    <div class="add-to-cart__error"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div id="shopify-section-product-features--nano-x" class="shopify-section"><span id="product-features"></span>
+        <div class="bg bg-black margin-lg product-features scroll-fixed-content">
+            <div class="row">
+                <h3 class="h2 margin-md title">Introducing the Ledger Nano X</h3>
+                <div class="fixed-area">
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/2974/4858/files/Introducing_533bbb9e-8dda-4ccb-9db3-5e6548cbfc45.png?v=1636043945"
+                            alt="">
+                    </div>
+                </div>
+                <div class="product-features-text">
+                    <div class="item margin-md active" data-id="1">
+                        <p class="title margin-xs">Reclaim power over your money</p>
+                        <p>Combine the Ledger Nano X with the Ledger Live app for maximum security and control
+                            over your crypto. The Ledger Nano X keeps your coins offline and protected.</p>
+                    </div>
+                    <div class="item margin-md " data-id="2">
+                        <p class="title margin-xs">Buy, exchange and grow your crypto</p>
+                        <p>Manage and invest your crypto anytime, anywhere, with Ledger and our partners. Buy,
+                            exchange, trade crypto in seconds, the simple, safe, smart way.</p>
+                        <p>
+                            <a href="https://www.ledger.com/supported-services" class="read-more"
+                                title="Explore all our services">Explore all our services</a>
+                        </p>
+                    </div>
+                    <div class="item margin-md " data-id="3">
+                        <p class="title margin-xs">Mobile friendly</p>
+                        <p>The Ledger Nano X is the perfect hardware wallet for managing your crypto on the go.
+                            It connects to your phone with Bluetooth and has a large screen for ease of use.</p>
+                        <p>
+                            <a href="/pages/ledger-nano-x" class="read-more" title="Discover the Nano X">Discover the
+                                Nano X</a>
+                        </p>
+                    </div>
+                    <div class="item  " data-id="4">
+                        <p class="title margin-xs">All your crypto in one place</p>
+                        <p>The biggest capacity of our wallets – you can install up to 100 apps at the same
+                            time: including Bitcoin, Ethereum, XRP and more than 5,500<strong>
+                            </strong>different tokens.</p>
+                        <p>
+                            <a href="https://www.ledger.com/supported-crypto-assets/" class="read-more"
+                                title="Supported crypto assets">Supported crypto assets</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // scrolling section + fixed element
+            (function () {
+                document.addEventListener("DOMContentLoaded", function (event) {
+                    let limit = 45; // on scroll event  
+                    $(window).scroll((evt) => {
+                        var iWindowsSize = $(window).width();
+                        if (iWindowsSize <= 992) {
+                            limit = 35;
+                        }
+                        $('.scroll-fixed-content .item').removeClass('active');
+                        // get screen height
+                        const windowHeight = window.innerHeight;
+                        // get scroll position
+                        const scrollPosition = $(evt.target).scrollTop();
+                        // calculate visible offsets of the page (with limit)
+                        const visibleLimit = Math.round(scrollPosition + (windowHeight *
+                            limit / 100));
+                        // create the lastElement variable
+                        let lastElement;
+                        // on each item:
+                        $('.scroll-fixed-content .item').each((idx, elt) => {
+                            // keep element in memory to avoid re-calculating
+                            const element = $(elt);
+                            // if the element is on the visible limit, save it
+                            if (element.offset().top < visibleLimit) {
+                                lastElement = element;
+                            }
+                        }); // if we doesn't have anay result, get the first item by default
+                        if (!lastElement) {
+                            lastElement = $('.scroll-fixed-content .item:eq(0)');
+                        }
+                        idElement = lastElement.data('id');
+                        // active current blocs      
+                        $('.scroll-fixed-content .item[data-id=' + idElement + ']')
+                            .addClass('active');
+                    });
+                });
+            })();
+        </script>
+    </div>
+
+    <div id="shopify-section-compare-products--nano" class="shopify-section">
+        <div id="compare-products" class="margin-lg compare-products">
+            <div class="row block-title align-center margin-md">
+                <p class="title h2 margin-xs">Compare Ledger devices</p> <a href="/pages/hardware-wallets-comparison"
+                    title="See the complete comparison here" class="read-more">
+                    See the complete comparison here
+                </a>
+            </div>
+            <div class="block-product-items">
+                <div class="item align-center all-clickable">
+                    <div class="item-image align-center margin-xs">
+                        <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/02_a0486472-5de0-4210-a6f7-0b385d3d8386_large.png?v=1636378908"
+                            alt="Ledger Nano X">
+                    </div>
+                    <div>
+                        <p class="super-small-text is-primary"><b></b></p>
+                        <h3 class="h4 margin-xs">Ledger Nano X</h3>
+                        <div class="margin-xs price"> <span
+                                class="flow-price flow-price__item add-to-cart__price--original flow-localized "
+                                flow-variant="14382701248554" flow-selector="prices.item.label"
+                                flow-default="€119,00">686,00 PLN
+                            </span>
+                            <div class="super-small-text caption" flow-id="includes"> <span
+                                    class="flow-price flow-price__includes flow-localized "
+                                    flow-variant="14382701248554" flow-selector="prices.item.includes.label">Includes
+                                    VAT
+                                </span>
+                            </div>
+                        </div> <!-- warning stock message -->
+                        <!-- -->
+                        <ul class="align-left margin-xs list-item">
+                            <li>Integrates a certified secure chip</li>
+                            <li>Store between 3 to 20 apps</li>
+                            <li>Bluetooth connection</li>
+                        </ul>
+                        <div class="align-left"><a href="/products/ledger-nano-x" title="Discover Ledger Nano X"
+                                class="read-more">Discover</a></div>
+                    </div>
+                </div>
+                <div class="item align-center all-clickable">
+                    <div class="item-image align-center margin-xs">
+                        <img src="https://cdn.shopify.com/s/files/1/2974/4858/products/black-lns_95b4bf48-c245-4dc5-8db7-7b437ce5bdc5_large.png?v=1636380615"
+                            alt="Ledger Nano S">
+                    </div>
+                    <div>
+                        <p class="super-small-text is-primary"><b></b></p>
+                        <h3 class="h4 margin-xs">Ledger Nano S</h3>
+                        <div class="margin-xs price"> <span
+                                class="flow-price flow-price__item add-to-cart__price--original flow-localized "
+                                flow-variant="13546753687594" flow-selector="prices.item.label"
+                                flow-default="€59,00">266,00 PLN
+                            </span>
+                            <div class="super-small-text caption" flow-id="includes"> <span
+                                    class="flow-price flow-price__includes flow-localized "
+                                    flow-variant="13546753687594" flow-selector="prices.item.includes.label">Includes
+                                    VAT
+                                </span>
+                            </div>
+                        </div> <!-- warning stock message -->
+                        <!-- -->
+                        <ul class="align-left margin-xs list-item">
+                            <li>Integrates a certified secure chip</li>
+                            <li>Up to 3 apps installed</li>
+                            <li>USB cable</li>
+                        </ul>
+                        <div class="align-left"><a href="/products/ledger-nano-s" title="Discover Ledger Nano S"
+                                class="read-more">Discover</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</html>
