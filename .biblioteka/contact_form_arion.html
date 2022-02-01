@@ -8760,6 +8760,11 @@
                                             placeholder="Jak możemy Ci pomóc?"></textarea>
                                         <small class="err-msg"></small>
                                     </div>
+
+                                    <div class="contactForm-rightInfo__two" style="text-align: left; padding-bottom: 20px;">
+                                        <p style="font-size: 10px"><b>Dbamy o Twoje dane osobowe. </b>Administratorem Państwa danych osobowych będzie <br>MAXSS Sp. z o.o. z siedzibą w Warszawie. Dane osobowe będą przetwarzane w celu <br>marketingu bezpośredniego produktów MAXSS Sp. z o.o. oraz odpowiedzi na Państwa pytania. <br>Szczegółowe informacje na temat przetwarzania danych osobowych znajdują się w Polityce Prywatności. <br><b style="color: #484848">Wysłanie zapytania skutkuje akceptają powyższej wiadomości.</b> </p>
+                                    </div>
+
                                     <button type="submit" id="btn"> Wyślij wiadomość</button>
                                 </form>
                             </div>
@@ -8884,12 +8889,9 @@
 
             });
 
-
-
             const btn = document.querySelector('#btn');
             btn.addEventListener('click', () => {
                 "use strict";
-
 
                 // Stop required
                 document.querySelector('#contactForm__fullName').required = false;
@@ -8897,22 +8899,17 @@
                 document.querySelector('#contactForm__subject').required = false
                 document.querySelector('#contactForm__textarea').required = false;
 
-
-
                 // Input Values
                 const fullName = document.querySelector('#contactForm__fullName');
                 const email = document.querySelector('#contactForm__email');
                 const subject = document.querySelector('#contactForm__subject');
                 const textarea = document.querySelector('#contactForm__textarea');
 
-
-
                 //submit sucess variable//
                 let a = 0;
                 let b = 0;
                 let c = 0;
                 let d = 0;
-
 
                 //validation for fullName//
                 if (fullName.value === "") {
@@ -8925,8 +8922,6 @@
                     fullName.style.border = 'none';
                     a = 1;
                 }
-
-
 
                 //email validation//
                 let atposition = email.value.indexOf("@");
@@ -8943,7 +8938,6 @@
                     b = 1;
                 }
 
-
                 //validation for lastName//
                 if (subject.value === "") {
                     subject.style.borderBottomColor = '#ff1616';
@@ -8956,7 +8950,6 @@
                     c = 1;
                 }
 
-
                 //validation for textarea//
                 if (textarea.value === "") {
                     textarea.style.borderBottomColor = '#ff1616';
@@ -8968,8 +8961,6 @@
                     textarea.style.border = 'none';
                     d = 1;
                 }
-
-
 
                 //return condition//
 
