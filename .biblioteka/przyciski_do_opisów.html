@@ -1,0 +1,574 @@
+<link href="https://creativelayers.net/themes/superio/css/bootstrap.css" rel="stylesheet">
+<link href="https://creativelayers.net/themes/superio/css/style.css" rel="stylesheet">
+<link href="https://creativelayers.net/themes/superio/css/responsive.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<style>
+    .job-categories {
+        position: relative;
+        padding: 115px 0 70px;
+        border-bottom: 1px solid #ECEDF2;
+    }
+
+    /*=== Category Blcok ===*/
+    .category-block {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .category-block .inner-box {
+        position: relative;
+        background: #FFFFFF;
+        border: 1px solid #ECEDF2;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 19px;
+        transition: all 300ms ease;
+    }
+
+    .category-block .inner-box:hover {
+        box-shadow: 0px 7px 18px rgba(64, 79, 104, 0.05);
+    }
+
+    .category-block .content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-left: 90px;
+        min-height: 70px;
+        flex-direction: column;
+    }
+
+    .category-block .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 70px;
+        width: 70px;
+        background: #ECEDF2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1967D2;
+        font-size: 36px;
+        border-radius: 10px;
+        transition: all 300ms ease;
+    }
+
+    .category-block .inner-box:hover .icon {
+        color: #ffffff;
+        background: #1967D2;
+    }
+
+    .category-block h4 {
+        font-size: 18px;
+        color: #202124;
+        font-weight: 500;
+        line-height: 29px;
+        margin-bottom: 4px;
+    }
+
+    .category-block h4 a {
+        color: #202124;
+        transition: all 300ms ease;
+    }
+
+    .category-block h4 a:hover {
+        color: #1967D2;
+    }
+
+    .category-block p {
+        font-size: 14px;
+        color: #696969;
+        font-weight: 400;
+    }
+
+    /*=== Category Blcok Two ===*/
+    .category-block-two {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .category-block-two .inner-box {
+        position: relative;
+        background: #FFFFFF;
+        border: 1px solid #ECEDF2;
+        border-radius: 8px;
+        padding: 40px 20px;
+        text-align: center;
+        transition: all 300ms ease;
+    }
+
+    .category-block-two .inner-box:hover {
+        box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
+    }
+
+    .category-block-two .content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-block-two .icon {
+        position: relative;
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        background: #ECEDF2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1967D2;
+        font-size: 36px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        transition: all 300ms ease;
+    }
+
+    .category-block-two .inner-box:hover .icon {
+        color: #ffffff;
+        background: #1967D2;
+    }
+
+    .category-block-two h4 {
+        font-size: 18px;
+        color: #202124;
+        font-weight: 500;
+        line-height: 29px;
+    }
+
+    .category-block-two h4 a {
+        color: #202124;
+        transition: all 300ms ease;
+    }
+
+    .category-block-two h4 a:hover {
+        color: #1967D2;
+    }
+
+    .category-block-two p {
+        font-size: 14px;
+        color: #696969;
+        font-weight: 400;
+    }
+
+    /*=== Category Blcok Three ===*/
+    .category-block-three {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .category-block-three .inner-box {
+        position: relative;
+        background: #FFFFFF;
+        border: 1px solid #ECEDF2;
+        border-radius: 8px;
+        padding: 40px 20px;
+        text-align: center;
+        transition: all 300ms ease;
+    }
+
+    .category-block-three .inner-box:hover {
+        box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
+    }
+
+    .category-block-three .content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-block-three .icon {
+        position: relative;
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        background: #ECEDF2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1967D2;
+        font-size: 36px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        transition: all 300ms ease;
+    }
+
+    .category-block-three h4 {
+        font-size: 18px;
+        color: #202124;
+        font-weight: 500;
+        line-height: 29px;
+    }
+
+    .category-block-three h4 a {
+        color: #202124;
+        transition: all 300ms ease;
+    }
+
+    .category-block-three h4 a:hover {
+        color: #1967D2;
+    }
+
+    .category-block-three p {
+        font-size: 14px;
+        color: #696969;
+        font-weight: 400;
+    }
+
+    .category-block-three:nth-child(1) .icon {
+        background: #D4F4F8;
+        color: #1967D2;
+    }
+
+    .category-block-three:nth-child(2) .icon {
+        background: #FEDDD8;
+        color: #FF2200;
+    }
+
+    .category-block-three:nth-child(3) .icon {
+        background: #F2E0FE;
+        color: #9900FF;
+    }
+
+    .category-block-three:nth-child(4) .icon {
+        background: #FFEEE2;
+        color: #FF2200;
+    }
+
+    .category-block-three:nth-child(5) .icon {
+        background: #D4EFDF;
+        color: #00CA52;
+    }
+
+    .category-block-three:nth-child(6) .icon {
+        background: #FCF4DB;
+        color: #ECB300;
+    }
+
+    .category-block-three:nth-child(7) .icon {
+        background: #DAD9F8;
+        color: #0800ED;
+    }
+
+    .category-block-three:nth-child(8) .icon {
+        background: #D4F4F8;
+        color: #00D0EA;
+    }
+
+    /* Style Two  */
+    .job-categories.style-two {
+        background: rgba(52, 168, 83, 0.04);
+    }
+
+    .job-categories.style-two .category-block .inner-box .icon {
+        background: rgba(52, 168, 83, 0.15);
+        border-radius: 50%;
+        color: #34a853;
+    }
+
+    .job-categories.style-two .category-block .inner-box:hover .icon {
+        background: #34a853;
+        color: #ffffff;
+    }
+
+    .job-categories.style-two .category-block h4 a:hover {
+        color: #34a853;
+    }
+</style>
+
+<section class="job-categories">
+    <div class="auto-container">
+        <div class="sec-title text-center">
+            <h2>Popular Job Categories</h2>
+            <div class="text">2020 jobs live - 293 added today.</div>
+        </div>
+
+        <div class="row wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+            <!-- Category Block -->
+            <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box">
+                    <div class="content">
+                        <span class="icon flaticon-money-1"></span>
+                        <h4><a href="https://creativelayers.net/themes/superio/#">Accounting / Finance</a></h4>
+                        <p>(2 open positions)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Block -->
+            <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box">
+                    <div class="content">
+                        <span class="icon flaticon-promotion"></span>
+                        <h4><a href="https://creativelayers.net/themes/superio/#">Marketing</a></h4>
+                        <p>86 open positions)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Block -->
+            <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box">
+                    <div class="content">
+                        <span class="icon flaticon-vector"></span>
+                        <h4><a href="https://creativelayers.net/themes/superio/#">Design</a></h4>
+                        <p>43 open positions)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Block -->
+            <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box">
+                    <div class="content">
+                        <span class="icon flaticon-web-programming"></span>
+                        <h4><a href="https://creativelayers.net/themes/superio/#">Development</a></h4>
+                        <p>(12 open positions)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Block -->
+            <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box">
+                    <div class="content">
+                        <span class="icon flaticon-headhunting"></span>
+                        <h4><a href="https://creativelayers.net/themes/superio/#">Human Resource</a></h4>
+                        <p>55 open positions)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Block -->
+            <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box">
+                    <div class="content">
+                        <span class="icon flaticon-rocket-ship"></span>
+                        <h4><a href="https://creativelayers.net/themes/superio/#">Project Management</a></h4>
+                        <p>(2 open positions)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Block -->
+            <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box">
+                    <div class="content">
+                        <span class="icon flaticon-support-1"></span>
+                        <h4><a href="https://creativelayers.net/themes/superio/#">Customer Service</a></h4>
+                        <p>(2 open positions)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Block -->
+            <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box">
+                    <div class="content">
+                        <span class="icon flaticon-first-aid-kit-1"></span>
+                        <h4><a href="https://creativelayers.net/themes/superio/#">Health and Care</a></h4>
+                        <p>(25 open positions)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Block -->
+            <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box">
+                    <div class="content">
+                        <span class="icon flaticon-car"></span>
+                        <h4><a href="https://creativelayers.net/themes/superio/#">Automotive Jobs</a></h4>
+                        <p>92 open positions</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="banner-section-six">
+    <div class="auto-container">
+        <div class="row">
+            <div class="content-column col-lg-7 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    <div class="title-box wow fadeInUp animated" data-wow-delay="300ms"
+                        style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                        <h3>Find a Perfect <br>Candidate</h3>
+                        <div class="text">Find Jobs, Employment &amp; Career Opportunities</div>
+                    </div>
+
+                    <!-- Job Search Form -->
+                    <div class="job-search-form wow fadeInUp animated" data-wow-delay="600ms"
+                        style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;">
+                        <form method="post" action="job-list-v10.html">
+                            <div class="row">
+                                <div class="form-group col-lg-5 col-md-12 col-sm-12">
+                                    <span class="icon flaticon-search-1"></span>
+                                    <input type="text" name="field_name" placeholder="Job title, keywords, or company">
+                                </div>
+                                <!-- Form Group -->
+                                <div class="form-group col-lg-4 col-md-12 col-sm-12 location">
+                                    <span class="icon flaticon-map-locator"></span>
+                                    <input type="text" name="field_name" placeholder="City or postcode">
+                                </div>
+                                <!-- Form Group -->
+                                <div class="form-group col-lg-3 col-md-12 col-sm-12 btn-box">
+                                    <button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Find
+                                            Jobs</span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Job Search Form -->
+
+                    <!-- Popular Search -->
+                    <div class="popular-searches wow fadeInUp animated" data-wow-delay="900ms"
+                        style="visibility: visible; animation-delay: 900ms; animation-name: fadeInUp;">
+                        <span class="title">Popular Searches : </span>
+                        <a href="https://creativelayers.net/themes/superio/#">Designer</a>,
+                        <a href="https://creativelayers.net/themes/superio/#">Developer</a>,
+                        <a href="https://creativelayers.net/themes/superio/#">Web</a>,
+                        <a href="https://creativelayers.net/themes/superio/#">IOS</a>,
+                        <a href="https://creativelayers.net/themes/superio/#">PHP</a>,
+                        <a href="https://creativelayers.net/themes/superio/#">Senior</a>,
+                        <a href="https://creativelayers.net/themes/superio/#">Engineer</a>,
+                    </div>
+                    <!-- End Popular Search -->
+                </div>
+            </div>
+
+            <div class="image-column col-lg-5 col-md-12">
+                <div class="image-box">
+                    <figure class="main-image wow fadeIn anm animated" data-wow-delay="1200ms" data-speed-x="2"
+                        style="transform: translate3d(-15.76px, 0px, 0px) scale(1) rotate(0deg); opacity: 1; visibility: visible; animation-delay: 1200ms; animation-name: fadeIn;">
+                        <img src="https://creativelayers.net/themes/superio/images/resource/banner-img-7.png" alt="">
+                    </figure>
+                    <!-- Info BLock One -->
+                    <div class="info_block wow fadeIn anm animated" data-wow-delay="1500ms" data-speed-x="3"
+                        data-speed-y="3"
+                        style="transform: translate3d(-23.64px, 7.695px, 0px) scale(1) rotate(0deg); opacity: 1; visibility: visible; animation-delay: 1500ms; animation-name: fadeIn;">
+                        <span class="icon flaticon-email-3"></span>
+                        <p>Work Inquiry From <br>Ali Tufan</p>
+                    </div>
+
+                    <!-- Info BLock Two -->
+                    <div class="info_block_two wow fadeIn anm animated" data-wow-delay="1800ms" data-speed-x="2"
+                        data-speed-y="2"
+                        style="transform: translate3d(-15.76px, 5.13px, 0px) scale(1) rotate(0deg); opacity: 1; visibility: visible; animation-delay: 1800ms; animation-name: fadeIn;">
+                        <p>10k+ Candidates</p>
+                        <div class="image"><img
+                                src="https://creativelayers.net/themes/superio/images/resource/multi-peoples.png"
+                                alt=""></div>
+                    </div>
+
+                    <!-- Info BLock Three -->
+                    <div class="info_block_three wow fadeIn anm animated" data-wow-delay="2100ms" data-speed-x="3"
+                        data-speed-y="2"
+                        style="transform: translate3d(-23.64px, 5.13px, 0px) scale(1) rotate(0deg); opacity: 1; visibility: visible; animation-delay: 2100ms; animation-name: fadeIn;">
+                        <span class="icon flaticon-briefcase"></span>
+                        <p>Creative Agency</p>
+                        <span class="sub-text">Startup</span>
+                        <span class="right_icon fa fa-check"></span>
+                    </div>
+
+                    <!-- Info BLock Four -->
+                    <div class="info_block_four wow fadeIn anm animated" data-wow-delay="2400ms" data-speed-x="2"
+                        data-speed-y="3"
+                        style="transform: translate3d(-15.76px, 7.695px, 0px) scale(1) rotate(0deg); opacity: 1; visibility: visible; animation-delay: 2400ms; animation-name: fadeIn;">
+                        <span class="icon flaticon-file"></span>
+                        <div class="inner">
+                            <p>Upload Your CV</p>
+                            <span class="sub-text">It only takes a few seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="about-section-two style-two layout-pt-60 layout-pb-60">
+    <div class="auto-container">
+        <div class="row justify-content-between align-items-center">
+            <!-- Image Column -->
+            <div class="image-column -no-margin col-xl-6 col-lg-6 col-md-12 col-sm-12 wow fadeInRight animated"
+                style="visibility: visible; animation-name: fadeInRight;">
+                <div class="image-box -type-1">
+                    <figure class="main-image wow fadeIn anm animated" data-wow-delay="1200ms" data-speed-x="2"
+                        style="transform: translate3d(-16.3px, 0px, 0px) scale(1) rotate(0deg); opacity: 1; visibility: visible; animation-delay: 1200ms; animation-name: fadeIn;">
+                        <img src="https://creativelayers.net/themes/superio/images/index-13/images/1.png" alt="">
+                    </figure>
+
+                    <!-- Info BLock One -->
+                    <div class="info_block wow fadeIn anm animated" data-wow-delay="1500ms" data-speed-x="3"
+                        data-speed-y="3"
+                        style="transform: translate3d(-24.45px, 7.875px, 0px) scale(1) rotate(0deg); opacity: 1; visibility: visible; animation-delay: 1500ms; animation-name: fadeIn;">
+                        <span class="icon flaticon-email-3"></span>
+                        <p>Work Inquiry From <br>Ali Tufan</p>
+                    </div>
+
+                    <!-- Info BLock Two -->
+                    <div class="info_block_two wow fadeIn anm animated" data-wow-delay="1800ms" data-speed-x="2"
+                        data-speed-y="2"
+                        style="transform: translate3d(-16.3px, 5.25px, 0px) scale(1) rotate(0deg); opacity: 1; visibility: visible; animation-delay: 1800ms; animation-name: fadeIn;">
+                        <p>10k+ Candidates</p>
+                        <div class="image"><img
+                                src="https://creativelayers.net/themes/superio/images/resource/multi-peoples.png"
+                                alt=""></div>
+                    </div>
+
+                    <!-- Info BLock Four -->
+                    <div class="info_block_four wow fadeIn anm animated" data-wow-delay="2400ms" data-speed-x="2"
+                        data-speed-y="3"
+                        style="transform: translate3d(-16.3px, 7.875px, 0px) scale(1) rotate(0deg); opacity: 1; visibility: visible; animation-delay: 2400ms; animation-name: fadeIn;">
+                        <span class="icon flaticon-file"></span>
+                        <div class="inner">
+                            <p>Upload Your CV</p>
+                            <span class="sub-text">It only takes a few seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Column -->
+            <div class="content-column mb-0 col-xl-5 col-lg-6 col-md-12 col-sm-12">
+                <div class="wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+                    <div class="sec-title">
+                        <h2 class="fw-700">Professional CV is your ticket to the dream job</h2>
+                        <div class="text mt-30">To start searching for jobs, you can attend job fairs online or in
+                            person, use job boards and career websites or reach out directly to recruiters in a targeted
+                            company to broaden your network.</div>
+                    </div>
+                    <a href="https://creativelayers.net/themes/superio/#" class="theme-btn -blue-dark">Post Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script src="https://creativelayers.net/themes/superio/js/jquery.js"></script>
+<script src="https://creativelayers.net/themes/superio/js/popper.min.js"></script>
+<script src="https://creativelayers.net/themes/superio/js/chosen.min.js"></script>
+<script src="https://creativelayers.net/themes/superio/js/bootstrap.min.js"></script>
+<script src="https://creativelayers.net/themes/superio/js/jquery.fancybox.js"></script>
+<script src="https://creativelayers.net/themes/superio/js/jquery.modal.min.js"></script>
+<script src="https://creativelayers.net/themes/superio/js/mmenu.polyfills.js"></script>
+<script src="https://creativelayers.net/themes/superio/js/mmenu.js"></script>
+<script src="https://creativelayers.net/themes/superio/js/appear.js"></script>
+<script src="https://creativelayers.net/themes/superio/js/anm.min.js"></script>
+<script src="https://creativelayers.net/themes/superio/js/ScrollMagic.min.js"></script>
+<script src="https://creativelayers.net/themes/superio/js/rellax.min.js"></script>
+<script src="https://creativelayers.net/themes/superio/js/owl.js"></script>
+<script src="https://creativelayers.net/themes/superio/js/wow.js"></script>
+<script src="https://creativelayers.net/themes/superio/js/script.js"></script>
