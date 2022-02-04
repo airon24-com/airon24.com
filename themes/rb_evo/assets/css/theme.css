@@ -33658,7 +33658,7 @@ li.product-flag:after {
   color: #222222;
   font-size: 14px;
   font-weight: 400;
-  min-width: 33px;
+  min-width: unset;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.125);
   -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.14);
