@@ -1,0 +1,649 @@
+<head>
+
+
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/flaticon2.css">
+    <link rel="stylesheet" type="text/css" href="css/flaticon4.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <link rel="stylesheet" type="text/css" href="product_custom.css">
+
+
+</head>
+
+<body>
+
+    <style>
+        .cs-slider {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            height: 835px;
+            padding: 0 30px
+        }
+
+        @media screen and (max-width:767px) {
+            .cs-slider {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                height: auto;
+                padding: 0 15px
+            }
+        }
+
+        .cs-slider__main {
+            position: relative;
+            width: 87%
+        }
+
+        @media screen and (max-width:1199px) {
+            .cs-slider__main {
+                width: 75%
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            .cs-slider__main {
+                width: 100%;
+                height: 400px
+            }
+        }
+
+        .cs-slider__main-item {
+            cursor: e-resize
+        }
+
+        .cs-slider__thumb {
+            width: 13%;
+            padding-left: 30px
+        }
+
+        @media screen and (max-width:1199px) {
+            .cs-slider__thumb {
+                width: 25%
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            .cs-slider__thumb {
+                width: 100%;
+                height: 150px;
+                padding-top: 30px;
+                padding-left: 0
+            }
+        }
+
+        .cs-slider__thumb-item {
+            position: relative;
+            height: 118px;
+            outline: 0;
+            cursor: pointer
+        }
+
+        @media screen and (max-width:767px) {
+            .cs-slider__thumb-item {
+                width: calc(50vw - 37px)
+            }
+        }
+
+        .cs-slider__thumb-item.swiper-slide-active:after {
+            background-color: transparent
+        }
+
+        .cs-slider__thumb-item:after {
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            bottom: -1px;
+            left: -1px;
+            -webkit-transition: background-color .2s ease;
+            -o-transition: background-color .2s ease;
+            transition: background-color .2s ease;
+            background-color: rgba(255, 255, 255, .5);
+            content: ""
+        }
+
+        .cs-slider__main-slider,
+        .cs-slider__thumb-slider {
+            height: 100%
+        }
+
+        .cs-slider__info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            min-width: 50%;
+            padding: 25px 22px;
+            background-color: #fff;
+            z-index: 10
+        }
+
+        @media screen and (max-width:991px) {
+            .cs-slider__info {
+                min-width: 70%;
+                padding: 15px 10px
+            }
+        }
+
+        .cs-slider__title {
+            margin-bottom: 0
+        }
+
+        .cs-slider__desc {
+            margin-top: 3px
+        }
+
+
+
+        .cs-sliderfull {
+            min-height: 320px
+        }
+
+        .cs-sliderfull__slider {
+            height: 100%
+        }
+
+        .cs-sliderfull__arrow {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            width: 130px;
+            height: 120px;
+            margin: auto;
+            -webkit-transform: scaleY(1);
+            -ms-transform: scaleY(1);
+            transform: scaleY(1);
+            -webkit-transition: opacity .5s, background .3s ease-in .2s, -webkit-transform .2s .1s;
+            transition: opacity .5s, background .3s ease-in .2s, -webkit-transform .2s .1s;
+            -o-transition: opacity .5s, background .3s ease-in .2s, transform .2s .1s;
+            transition: opacity .5s, background .3s ease-in .2s, transform .2s .1s;
+            transition: opacity .5s, background .3s ease-in .2s, transform .2s .1s, -webkit-transform .2s .1s;
+            background-size: cover;
+            font-family: "Woodford Bourne", sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            line-height: 1.8;
+            text-transform: uppercase
+        }
+
+        @media screen and (max-width:991px) {
+            .cs-sliderfull__arrow {
+                top: auto;
+                bottom: 0;
+                width: 150px;
+                max-width: calc(50% - 15px);
+                height: 100px
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            .cs-sliderfull__arrow {
+                height: 80px
+            }
+        }
+
+        .cs-sliderfull__arrow:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-transition: .1s;
+            -o-transition: .1s;
+            transition: .1s;
+            background: #111;
+            content: "";
+            opacity: 0
+        }
+
+        .cs-sliderfull__arrow.running {
+            -webkit-transform: scaleY(0);
+            -ms-transform: scaleY(0);
+            transform: scaleY(0);
+            -webkit-transition: -webkit-transform .3s;
+            transition: -webkit-transform .3s;
+            -o-transition: transform .3s;
+            transition: transform .3s;
+            transition: transform .3s, -webkit-transform .3s
+        }
+
+        .cs-sliderfull__arrow.running:after {
+            -webkit-transition: .2s;
+            -o-transition: .2s;
+            transition: .2s;
+            opacity: .8
+        }
+
+        .cs-sliderfull__arrow.swiper-button-prev {
+            right: 130px;
+            left: auto
+        }
+
+        @media screen and (max-width:991px) {
+            .cs-sliderfull__arrow.swiper-button-prev {
+                right: 0;
+                left: 0;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%)
+            }
+        }
+
+        .cs-sliderfull__arrow.swiper-button-next {
+            right: 0
+        }
+
+        @media screen and (max-width:991px) {
+            .cs-sliderfull__arrow.swiper-button-next {
+                left: 0;
+                -webkit-transform: translateX(50%);
+                -ms-transform: translateX(50%);
+                transform: translateX(50%)
+            }
+        }
+
+        .cs-sliderfull__arrow-inner {
+            position: relative;
+            -webkit-transition: color .2s ease, border .2s ease;
+            -o-transition: color .2s ease, border .2s ease;
+            transition: color .2s ease, border .2s ease;
+            border-bottom: 2px solid rgba(255, 255, 255, 0);
+            color: rgba(255, 255, 255, 0);
+            z-index: 1
+        }
+
+        .cs-sliderfull__arrow:hover .cs-sliderfull__arrow-inner {
+            border-bottom: 2px solid #fff;
+            color: #fff
+        }
+    </style>
+
+
+    <link rel="stylesheet" id="swiper-css" href="https://n.foxdsgn.com/coca-html/assets/css/swiper.min.css?ver=1.1.2"
+        type="text/css" media="all">
+
+    <link rel="stylesheet" id="bootstrap-css" href="https://n.foxdsgn.com/coca-html/assets/css/bootstrap.css?ver=1.1.2"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="coca-core-css" href="https://n.foxdsgn.com/coca-html/assets/css/style.css?ver=1.1.2"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="coca-theme-css"
+        href="https://n.foxdsgn.com/coca-html/assets/css/style2.min.css?ver=1.1.2" type="text/css" media="all">
+    </head>
+
+    <div class="container padd-only-xs">
+        <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true"
+            class="row row-no-padding" style="position: relative; left: -360px; box-sizing: border-box; width: 1920px;">
+            <div class="column_container col-sm-12 ">
+                <div class="column-inner ">
+                    <div>
+                        <div class="cs-slider ">
+                            <div class="cs-slider__main">
+                                <div class="swiper-container cs-slider__main-slider js-main-slider swiper-unique-id-0 initialized swiper-container-horizontal swiper-container-wp8-horizontal"
+                                    data-control=".js-thumb-slider" data-fade="0" data-loop="1" data-autoplay-on="0"
+                                    data-slides-per-view="1" data-speed="500" data-space-between="0"
+                                    data-autoplay-delay="5000" id="swiper-unique-id-0" style="cursor: grab;">
+                                    <div class="swiper-wrapper"
+                                        style="transition-duration: 0ms; transform: translate3d(-9708px, 0px, 0px);">
+                                        <div class="swiper-slide cs-slider__main-item swiper-slide-duplicate s-back-switch swiper-slide-duplicate-next"
+                                            data-swiper-slide-index="1"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg 1612w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-300x200.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-768x512.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-1024x683.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-600x400.jpg 600w"
+                                                sizes="(max-width: 1612px) 100vw, 1612px" style="display: none;"
+                                                width="1612" height="1075"> </div>
+                                        <div class="swiper-slide cs-slider__main-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="2"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg 1601w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-300x180.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-768x461.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-1024x615.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-600x360.jpg 600w"
+                                                sizes="(max-width: 1601px) 100vw, 1601px" style="display: none;"
+                                                width="1601" height="961"> </div>
+                                        <div class="swiper-slide cs-slider__main-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="3"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg 1345w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-300x193.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-768x494.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-1024x659.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-600x386.jpg 600w"
+                                                sizes="(max-width: 1345px) 100vw, 1345px" style="display: none;"
+                                                width="1345" height="866"> </div>
+                                        <div class="swiper-slide cs-slider__main-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="4"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg 1637w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-300x169.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-768x432.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-1024x576.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-600x338.jpg 600w"
+                                                sizes="(max-width: 1637px) 100vw, 1637px" style="display: none;"
+                                                width="1637" height="921"> </div>
+                                        <div class="swiper-slide cs-slider__main-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="5"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg 1611w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-300x213.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-768x546.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-1024x728.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-600x427.jpg 600w"
+                                                sizes="(max-width: 1611px) 100vw, 1611px" style="display: none;"
+                                                width="1611" height="1146"> </div>
+                                        <div class="swiper-slide cs-slider__main-item swiper-slide-duplicate s-back-switch swiper-slide-prev"
+                                            data-swiper-slide-index="6"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1.jpg 1600w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-300x200.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-768x512.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-1024x683.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-600x400.jpg 600w"
+                                                sizes="(max-width: 1600px) 100vw, 1600px" style="display: none;"
+                                                width="1600" height="1067"> </div>
+                                        <div class="swiper-slide cs-slider__main-item s-back-switch swiper-slide-active"
+                                            data-swiper-slide-index="0"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1.jpg 1400w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-300x182.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-768x466.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-1024x622.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-600x364.jpg 600w"
+                                                sizes="(max-width: 1400px) 100vw, 1400px" style="display: none;"
+                                                width="1400" height="850"> </div>
+                                        <div class="swiper-slide cs-slider__main-item s-back-switch swiper-slide-next"
+                                            data-swiper-slide-index="1"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg 1612w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-300x200.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-768x512.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-1024x683.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-600x400.jpg 600w"
+                                                sizes="(max-width: 1612px) 100vw, 1612px" style="display: none;"
+                                                width="1612" height="1075"> </div>
+                                        <div class="swiper-slide cs-slider__main-item s-back-switch"
+                                            data-swiper-slide-index="2"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg 1601w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-300x180.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-768x461.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-1024x615.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-600x360.jpg 600w"
+                                                sizes="(max-width: 1601px) 100vw, 1601px" style="display: none;"
+                                                width="1601" height="961"> </div>
+                                        <div class="swiper-slide cs-slider__main-item s-back-switch"
+                                            data-swiper-slide-index="3"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg 1345w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-300x193.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-768x494.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-1024x659.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-600x386.jpg 600w"
+                                                sizes="(max-width: 1345px) 100vw, 1345px" style="display: none;"
+                                                width="1345" height="866"> </div>
+                                        <div class="swiper-slide cs-slider__main-item s-back-switch"
+                                            data-swiper-slide-index="4"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg 1637w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-300x169.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-768x432.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-1024x576.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-600x338.jpg 600w"
+                                                sizes="(max-width: 1637px) 100vw, 1637px" style="display: none;"
+                                                width="1637" height="921"> </div>
+                                        <div class="swiper-slide cs-slider__main-item s-back-switch"
+                                            data-swiper-slide-index="5"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg 1611w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-300x213.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-768x546.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-1024x728.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-600x427.jpg 600w"
+                                                sizes="(max-width: 1611px) 100vw, 1611px" style="display: none;"
+                                                width="1611" height="1146"> </div>
+                                        <div class="swiper-slide cs-slider__main-item s-back-switch swiper-slide-duplicate-prev"
+                                            data-swiper-slide-index="6"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1.jpg 1600w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-300x200.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-768x512.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-1024x683.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-600x400.jpg 600w"
+                                                sizes="(max-width: 1600px) 100vw, 1600px" style="display: none;"
+                                                width="1600" height="1067"> </div>
+                                        <div class="swiper-slide cs-slider__main-item swiper-slide-duplicate s-back-switch swiper-slide-duplicate-active"
+                                            data-swiper-slide-index="0"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1.jpg 1400w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-300x182.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-768x466.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-1024x622.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-600x364.jpg 600w"
+                                                sizes="(max-width: 1400px) 100vw, 1400px" style="display: none;"
+                                                width="1400" height="850"> </div>
+                                        <div class="swiper-slide cs-slider__main-item swiper-slide-duplicate s-back-switch swiper-slide-duplicate-next"
+                                            data-swiper-slide-index="1"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg 1612w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-300x200.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-768x512.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-1024x683.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-600x400.jpg 600w"
+                                                sizes="(max-width: 1612px) 100vw, 1612px" style="display: none;"
+                                                width="1612" height="1075"> </div>
+                                        <div class="swiper-slide cs-slider__main-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="2"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg 1601w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-300x180.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-768x461.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-1024x615.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-600x360.jpg 600w"
+                                                sizes="(max-width: 1601px) 100vw, 1601px" style="display: none;"
+                                                width="1601" height="961"> </div>
+                                        <div class="swiper-slide cs-slider__main-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="3"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg 1345w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-300x193.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-768x494.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-1024x659.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-600x386.jpg 600w"
+                                                sizes="(max-width: 1345px) 100vw, 1345px" style="display: none;"
+                                                width="1345" height="866"> </div>
+                                        <div class="swiper-slide cs-slider__main-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="4"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg 1637w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-300x169.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-768x432.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-1024x576.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-600x338.jpg 600w"
+                                                sizes="(max-width: 1637px) 100vw, 1637px" style="display: none;"
+                                                width="1637" height="921"> </div>
+                                        <div class="swiper-slide cs-slider__main-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="5"
+                                            style="width: 1618px; background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg&quot;);">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg 1611w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-300x213.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-768x546.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-1024x728.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-600x427.jpg 600w"
+                                                sizes="(max-width: 1611px) 100vw, 1611px" style="display: none;"
+                                                width="1611" height="1146"> </div>
+                                    </div>
+                                </div>
+                                <div class="cs-slider__info">
+                                    <h4 class="cs-slider__title">
+                                        VILTERS </h4>
+                                    <p class="cs-slider__desc">
+                                        Aqaba, Jordan </p>
+                                </div>
+                            </div>
+                            <div class="cs-slider__thumb">
+                                <div class="swiper-container cs-slider__thumb-slider js-thumb-slider swiper-unique-id-1 initialized swiper-container-vertical swiper-container-wp8-vertical"
+                                    data-control=".js-main-slider" data-fade="0" data-loop="1" data-autoplay-on="0"
+                                    data-slides-per-view="auto" data-speed="500" data-space-between="30"
+                                    data-autoplay-delay="5000" data-direction="vertical"
+                                    data-xs-slides="auto,30,horizontal" id="swiper-unique-id-1" style="cursor: grab;">
+                                    <div class="swiper-wrapper"
+                                        style="transition-duration: 0ms; transform: translate3d(0px, -529.5px, 0px);">
+                                        <div class="swiper-slide cs-slider__thumb-item swiper-slide-duplicate s-back-switch swiper-slide-duplicate-next"
+                                            data-swiper-slide-index="1"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg 1612w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-300x200.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-768x512.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-1024x683.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-600x400.jpg 600w"
+                                                sizes="(max-width: 1612px) 100vw, 1612px" style="display: none;"
+                                                width="1612" height="1075"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="2"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg 1601w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-300x180.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-768x461.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-1024x615.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-600x360.jpg 600w"
+                                                sizes="(max-width: 1601px) 100vw, 1601px" style="display: none;"
+                                                width="1601" height="961"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="3"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg 1345w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-300x193.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-768x494.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-1024x659.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-600x386.jpg 600w"
+                                                sizes="(max-width: 1345px) 100vw, 1345px" style="display: none;"
+                                                width="1345" height="866"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="4"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg 1637w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-300x169.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-768x432.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-1024x576.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-600x338.jpg 600w"
+                                                sizes="(max-width: 1637px) 100vw, 1637px" style="display: none;"
+                                                width="1637" height="921"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="5"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg 1611w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-300x213.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-768x546.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-1024x728.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-600x427.jpg 600w"
+                                                sizes="(max-width: 1611px) 100vw, 1611px" style="display: none;"
+                                                width="1611" height="1146"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item swiper-slide-duplicate s-back-switch swiper-slide-prev"
+                                            data-swiper-slide-index="6"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1.jpg 1600w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-300x200.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-768x512.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-1024x683.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-600x400.jpg 600w"
+                                                sizes="(max-width: 1600px) 100vw, 1600px" style="display: none;"
+                                                width="1600" height="1067"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item s-back-switch swiper-slide-active"
+                                            data-swiper-slide-index="0"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1.jpg 1400w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-300x182.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-768x466.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-1024x622.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-600x364.jpg 600w"
+                                                sizes="(max-width: 1400px) 100vw, 1400px" style="display: none;"
+                                                width="1400" height="850"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item s-back-switch swiper-slide-next"
+                                            data-swiper-slide-index="1"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg 1612w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-300x200.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-768x512.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-1024x683.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-600x400.jpg 600w"
+                                                sizes="(max-width: 1612px) 100vw, 1612px" style="display: none;"
+                                                width="1612" height="1075"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item s-back-switch"
+                                            data-swiper-slide-index="2"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg 1601w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-300x180.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-768x461.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-1024x615.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-600x360.jpg 600w"
+                                                sizes="(max-width: 1601px) 100vw, 1601px" style="display: none;"
+                                                width="1601" height="961"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item s-back-switch"
+                                            data-swiper-slide-index="3"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg 1345w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-300x193.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-768x494.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-1024x659.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-600x386.jpg 600w"
+                                                sizes="(max-width: 1345px) 100vw, 1345px" style="display: none;"
+                                                width="1345" height="866"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item s-back-switch"
+                                            data-swiper-slide-index="4"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg 1637w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-300x169.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-768x432.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-1024x576.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-600x338.jpg 600w"
+                                                sizes="(max-width: 1637px) 100vw, 1637px" style="display: none;"
+                                                width="1637" height="921"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item s-back-switch"
+                                            data-swiper-slide-index="5"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg 1611w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-300x213.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-768x546.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-1024x728.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-600x427.jpg 600w"
+                                                sizes="(max-width: 1611px) 100vw, 1611px" style="display: none;"
+                                                width="1611" height="1146"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item s-back-switch swiper-slide-duplicate-prev"
+                                            data-swiper-slide-index="6"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1.jpg 1600w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-300x200.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-768x512.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-1024x683.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/detail-paralax-txt-1-1-600x400.jpg 600w"
+                                                sizes="(max-width: 1600px) 100vw, 1600px" style="display: none;"
+                                                width="1600" height="1067"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item swiper-slide-duplicate s-back-switch swiper-slide-duplicate-active"
+                                            data-swiper-slide-index="0"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1.jpg 1400w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-300x182.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-768x466.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-1024x622.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-1-1-600x364.jpg 600w"
+                                                sizes="(max-width: 1400px) 100vw, 1400px" style="display: none;"
+                                                width="1400" height="850"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item swiper-slide-duplicate s-back-switch swiper-slide-duplicate-next"
+                                            data-swiper-slide-index="1"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-1-1.jpg 1612w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-300x200.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-768x512.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-1024x683.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-1-1-600x400.jpg 600w"
+                                                sizes="(max-width: 1612px) 100vw, 1612px" style="display: none;"
+                                                width="1612" height="1075"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="2"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slide-4-1.jpg 1601w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-300x180.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-768x461.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-1024x615.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slide-4-1-600x360.jpg 600w"
+                                                sizes="(max-width: 1601px) 100vw, 1601px" style="display: none;"
+                                                width="1601" height="961"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="3"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1.jpg 1345w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-300x193.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-768x494.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-1024x659.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slider-simple-2-1-600x386.jpg 600w"
+                                                sizes="(max-width: 1345px) 100vw, 1345px" style="display: none;"
+                                                width="1345" height="866"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="4"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/slide-3-1.jpg 1637w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-300x169.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-768x432.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-1024x576.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/slide-3-1-600x338.jpg 600w"
+                                                sizes="(max-width: 1637px) 100vw, 1637px" style="display: none;"
+                                                width="1637" height="921"> </div>
+                                        <div class="swiper-slide cs-slider__thumb-item swiper-slide-duplicate s-back-switch"
+                                            data-swiper-slide-index="5"
+                                            style="background-image: url(&quot;https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg&quot;); margin-bottom: 30px;">
+                                            <img src="https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg"
+                                                class="s-img-switch" alt="slide-img"
+                                                srcset="https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2.jpg 1611w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-300x213.jpg 300w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-768x546.jpg 768w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-1024x728.jpg 1024w, https://n.foxdsgn.com/coca-html/assets/images/detail-simple-1-2-600x427.jpg 600w"
+                                                sizes="(max-width: 1611px) 100vw, 1611px" style="display: none;"
+                                                width="1611" height="1146"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+
+<script src="https://n.foxdsgn.com/coca-html/assets/js/jquery.js?ver=1.12.4"></script>
+<script src="https://n.foxdsgn.com/coca-html/assets/js/jquery-migrate.min.js?ver=1.4.1"></script>
+<script src="https://n.foxdsgn.com/coca-html/assets/js/jquery.themepunch.tools.min.js?ver=5.4.6.6"></script>
+<script src="https://n.foxdsgn.com/coca-html/assets/js/jquery.blockUI.min.js?ver=2.70"></script>
+<script src="https://n.foxdsgn.com/coca-html/assets/js/scripts.js?ver=5.1.1"></script>
+<script src="https://n.foxdsgn.com/coca-html/assets/js/swiper.min.js?ver=1.1.2"></script>
+<script src="https://n.foxdsgn.com/coca-html/assets/js/jquery.fancybox.min.js?ver=1.1.2"></script>
+<script src="https://n.foxdsgn.com/coca-html/assets/js/script.js?ver=1.1.2"></script>
