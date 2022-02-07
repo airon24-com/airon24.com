@@ -6,7 +6,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="serivce_col p-75 bg-white">
 						<div class="oct-svs-icon">
-							<img src="img/Haier_Tundra_Plus/icon/cooler.png" style="max-width: 100px">
+							<img src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/icon/cooler.png" style="max-width: 100px">
 						</div>
 						<h3> Bezpieczeństwo </h3>
 						<p> Urządzenie usuwa niemal wszystkie wirusy, bakterie i pyły PM2.5 (99,99% w 30 minut).
@@ -17,7 +17,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="serivce_col p-75 bg-white">
 						<div class="oct-svs-icon">
-							<img src="img/Haier_Tundra_Plus/icon/thermostat.png" style="max-width: 100px">
+							<img src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/icon/thermostat.png" style="max-width: 100px">
 						</div>
 						<h3>Sprawność</h3>
 						<p>Maksymalna powierzchnia 39 m2 zostaje oczyszczona w zaledwie 20 minut.</p>
@@ -27,7 +27,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="serivce_col p-75 bg-white">
 						<div class="oct-svs-icon">
-							<img src="img/Haier_Tundra_Plus/icon/air-filter.png" style="max-width: 100px">
+							<img src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/icon/air-filter.png" style="max-width: 100px">
 						</div>
 						<h3>Funkcjonalność</h3>
 						<p> Urządzenie pozwala chłodzić i ogrzewać pomieszczenia już w 3 minuty od uruchomienia.
@@ -84,86 +84,17 @@
 							style="visibility: visible; animation-duration: 700ms; animation-delay: 370ms; animation-name: fadeIn;">
 							<div id="slidy-container">
 								<figure id="slidy">
-									<img load="lazy" src="img/Haier_Tundra_Plus/abt20.jpg" alt="lucie-2"
+									<img load="lazy" src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/abt20.jpg" alt="lucie-2"
 										class="img-fluid">
-									<img load="lazy" src="img/Haier_Tundra_Plus/abt18.jpg" alt="eyes" class="img-fluid">
-									<img load="lazy" src="img/Haier_Tundra_Plus/abt19.jpg" alt="lou" class="img-fluid">
-									<img load="lazy" src="img/Haier_Tundra_Plus/abt21.jpg" alt="lucie"
+									<img load="lazy" src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/abt18.jpg" alt="eyes" class="img-fluid">
+									<img load="lazy" src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/abt19.jpg" alt="lou" class="img-fluid">
+									<img load="lazy" src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/abt21.jpg" alt="lucie"
 										class="img-fluid">
 								</figure>
 							</div>
 						</div>
 
-						<script>
-							/* user defined variables */
-							var timeOnSlide = 4,
-								// the time each image will remain static on the screen, measured in seconds
-								timeBetweenSlides = 1,
-								// the time taken to transition between images, measured in seconds
-
-								// test if the browser supports animation, and if it needs a vendor prefix to do so
-								animationstring = 'animation',
-								animation = false,
-								keyframeprefix = '',
-								domPrefixes = 'Webkit Moz O Khtml'.split(' '),
-								// array of possible vendor prefixes
-								pfx = '',
-								slidy = document.getElementById("slidy");
-							if (slidy.style.animationName !== undefined) {
-								animation = true;
-							}
-							// browser supports keyframe animation w/o prefixes
-
-							if (animation === false) {
-								for (var i = 0; i < domPrefixes.length; i++) {
-									if (slidy.style[domPrefixes[i] + 'AnimationName'] !== undefined) {
-										pfx = domPrefixes[i];
-										animationstring = pfx + 'Animation';
-										keyframeprefix = '-' + pfx.toLowerCase() + '-';
-										animation = true;
-										break;
-									}
-								}
-							}
-
-							if (animation === false) {
-								// animate in JavaScript fallback
-							} else {
-								var images = slidy.getElementsByTagName("img"),
-									firstImg = images[0],
-									// get the first image inside the "slidy" element.
-									imgWrap = firstImg.cloneNode(false); // copy it.
-								slidy.appendChild(imgWrap); // add the clone to the end of the images
-								var imgCount = images.length, // count the number of images in the slide, including the new cloned element
-									totalTime = (timeOnSlide + timeBetweenSlides) * (imgCount -
-										1
-									), // calculate the total length of the animation by multiplying the number of _actual_ images by the amount of time for both static display of each image and motion between them
-									slideRatio = (timeOnSlide / totalTime) *
-									100, // determine the percentage of time an induvidual image is held static during the animation
-									moveRatio = (timeBetweenSlides / totalTime) *
-									100, // determine the percentage of time for an individual movement
-									basePercentage = 100 /
-									imgCount, // work out how wide each image should be in the slidy, as a percentage.
-									position = 0, // set the initial position of the slidy element
-									css = document.createElement("style"); // start marking a new style sheet
-								css.type = "text/css";
-								css.innerHTML += "#slidy { text-align: left; margin: 0; font-size: 0; position: relative; width: " + (
-									imgCount * 100) + "%;  }\n"; // set the width for the slidy container
-								css.innerHTML += "#slidy img { float: left; width: " + basePercentage + "%; }\n";
-								css.innerHTML += "@" + keyframeprefix + "keyframes slidy {\n";
-								for (i = 0; i < (imgCount - 1); i++) { // 
-									position += slideRatio; // make the keyframe the position of the image
-									css.innerHTML += position + "% { left: -" + (i * 100) + "%; }\n";
-									position += moveRatio; // make the postion for the _next_ slide
-									css.innerHTML += position + "% { left: -" + ((i + 1) * 100) + "%; }\n";
-								}
-								css.innerHTML += "}\n";
-								css.innerHTML += "#slidy { left: 0%; " + keyframeprefix + "transform: translate3d(0,0,0); " +
-									keyframeprefix + "animation: " + totalTime +
-									"s slidy infinite; }\n"; // call on the completed keyframe animation sequence
-								document.body.appendChild(css); // add the new stylesheet to the end of the document
-							}
-						</script>
+						
 
 					</div>
 					<!--abt-block2-img end-->
@@ -252,7 +183,7 @@
 
 			<div class="row md-mg-0">
 				<div class="full-image">
-					<img load="lazy" src="img/Haier_Tundra_Plus/full-image.png" alt="">
+					<img load="lazy" src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/full-image.png" alt="">
 				</div>
 				<div class="col-lg-12">
 					<div class="about-text style2 pl-0" style="padding-right: 0px !important;">
@@ -278,9 +209,9 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6 col-md-6">
 					<div class="abt-img">
-						<img load="lazy" src="img/Haier_Tundra_Plus/img3.jpg" alt="">
+						<img load="lazy" src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/img3.jpg" alt="">
 						<div class="abt-2">
-							<img load="lazy" src="img/Haier_Tundra_Plus/img2.jpg" alt="">
+							<img load="lazy" src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/img2.jpg" alt="">
 						</div>
 					</div>
 					<!--abt-img end-->
@@ -359,7 +290,7 @@
 
 				<div class="col-lg-6">
 					<div class="img">
-						<img load="lazy" src="img/Haier_Tundra_Plus/abt17.jpg" alt="" class="img-fluid">
+						<img load="lazy" src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/abt17.jpg" alt="" class="img-fluid">
 					</div>
 				</div>
 
@@ -373,7 +304,7 @@
 	<div class="fixed-bg"></div>
 	<div class="container">
 		<div class="videeo-sec v-serv overlay">
-			<img load="lazy" src="img/Haier_Tundra_Plus/msc-img.jpg" alt="">
+			<img load="lazy" src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/msc-img.jpg" alt="">
 			<div class="vide-cap">
 				<a href="https://www.youtube.com/watch?v=h3BHW_HYgT8" title="" class="html5lightbox"><img load="lazy"
 						src="images/play-icon.png" alt=""></a>
@@ -404,7 +335,7 @@
 				</div>
 				<div class="col-lg-7 col-md-12 col-sm-12">
 					<div class="abt-block2-img shapy">
-						<img load="lazy" src="img/Haier_Tundra_Plus/abt14.jpg" alt="">
+						<img load="lazy" src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/abt14.jpg" alt="">
 					</div>
 					<!--abt-block2-img end-->
 				</div>
@@ -441,7 +372,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="fea-box">
 						<div class="ttm-iconbox ttm-wrap-cell">
-							<img src="img/Haier_Tundra_Plus/icon/cooler.png" style="max-width: 45px">
+							<img src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/icon/cooler.png" style="max-width: 45px">
 						</div>
 						<div class="ttm-contentbox ttm-wrap-cell">
 							<h3 class="title"> Regulacja wentylatora </h3>
@@ -453,7 +384,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="fea-box">
 						<div class="ttm-iconbox ttm-wrap-cell">
-							<img src="img/Haier_Tundra_Plus/icon/ipads.png" style="max-width: 45px">
+							<img src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/icon/ipads.png" style="max-width: 45px">
 						</div>
 						<div class="ttm-contentbox ttm-wrap-cell">
 							<h3 class="title">Wyświetlacz LED</h3>
@@ -465,7 +396,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="fea-box">
 						<div class="ttm-iconbox ttm-wrap-cell">
-							<img src="img/Haier_Tundra_Plus/icon/thermostat.png" style="max-width: 45px">
+							<img src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/icon/thermostat.png" style="max-width: 45px">
 						</div>
 						<div class="ttm-contentbox ttm-wrap-cell">
 							<h3 class="title">Trwały PCB</h3>
@@ -477,7 +408,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="fea-box">
 						<div class="ttm-iconbox ttm-wrap-cell">
-							<img src="img/Haier_Tundra_Plus/icon/day.png" style="max-width: 45px">
+							<img src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/icon/day.png" style="max-width: 45px">
 						</div>
 						<div class="ttm-contentbox ttm-wrap-cell">
 							<h3 class="title">Komfortowy sen</h3>
@@ -489,7 +420,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="fea-box">
 						<div class="ttm-iconbox ttm-wrap-cell">
-							<img src="img/Haier_Tundra_Plus/icon/support.png" style="max-width: 45px">
+							<img src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/icon/support.png" style="max-width: 45px">
 						</div>
 						<div class="ttm-contentbox ttm-wrap-cell">
 							<h3 class="title">24h regulator czasowy</h3>
@@ -501,7 +432,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="fea-box">
 						<div class="ttm-iconbox ttm-wrap-cell">
-							<img src="img/Haier_Tundra_Plus/icon/silence.png" style="max-width: 45px">
+							<img src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/icon/silence.png" style="max-width: 45px">
 						</div>
 						<div class="ttm-contentbox ttm-wrap-cell">
 							<h3 class="title">Bardzo cicha praca</h3>
@@ -513,7 +444,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="fea-box">
 						<div class="ttm-iconbox ttm-wrap-cell">
-							<img src="img/Haier_Tundra_Plus/icon/air-conditioner.png" style="max-width: 45px">
+							<img src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/icon/air-conditioner.png" style="max-width: 45px">
 						</div>
 						<div class="ttm-contentbox ttm-wrap-cell">
 							<h3 class="title">Inteligentne powietrze</h3>
@@ -525,7 +456,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="fea-box">
 						<div class="ttm-iconbox ttm-wrap-cell">
-							<img src="img/Haier_Tundra_Plus/icon/humidity.png" style="max-width: 45px">
+							<img src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/icon/humidity.png" style="max-width: 45px">
 						</div>
 						<div class="ttm-contentbox ttm-wrap-cell">
 							<h3 class="title">Funkcja osuszania</h3>
@@ -537,7 +468,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="fea-box">
 						<div class="ttm-iconbox ttm-wrap-cell">
-							<img src="img/Haier_Tundra_Plus/icon/air-filter.png" style="max-width: 45px">
+							<img src="http://greenwat.eu/shop/img/Haier_Tundra_Plus/icon/air-filter.png" style="max-width: 45px">
 						</div>
 						<div class="ttm-contentbox ttm-wrap-cell">
 							<h3 class="title">Filtr wielowarstwowy</h3>
@@ -626,7 +557,7 @@
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="testi-img" data-aos="fade-up" data-aos-duration="1000">
-						<img load="lazy" src="img/customer_opinion_person_photo/customer_opinion_person_photo8.png"
+						<img load="lazy" src="http://greenwat.eu/shop/img/customer_opinion_person_photo/customer_opinion_person_photo8.png"
 							alt="">
 					</div>
 				</div>

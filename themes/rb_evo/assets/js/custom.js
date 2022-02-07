@@ -196,3 +196,38 @@ if (screen.width >= 992) {
         }
     });
 }
+
+let root = document.documentElement;
+let hasClipPathSupport = false;
+
+if ('CSS' in window) {
+  hasClipPathSupport =
+    CSS.supports('clip-path: polygon(0% 0%, 100% 0%, 100% 0px, 0% 0px)') ||
+    CSS.supports('-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 0px, 0% 0px)');
+}
+
+const elStickyExclude = document.getElementById('js-sticky-exclude');
+const elStickyNext = document.getElementById('js-sticky-next');
+const stickyExcludeHeight = elStickyExclude.offsetHeight;
+
+function lookForStickyExclude() {
+  const extraTop = elStickyExclude.getBoundingClientRect().top + stickyExcludeHeight;
+  const nextTop = elStickyNext.getBoundingClientRect().top;
+  const diff = nextTop - extraTop;
+  const pathHeight = stickyExcludeHeight + diff;
+  
+  const value = `${pathHeight}px`;
+
+  if(hasClipPathSupport) {
+    root.style.setProperty('--js-sticky-exclude-path-height', value);
+  } else {
+    // IE or Edge: ¯\_(ツ)_/¯
+    elStickyExclude.style.maxHeight = value;
+    elStickyExclude.style.overflow = 'hidden';
+    // WIP: Working on another solution with SVG clip-path
+    // elStickyExclude.style.clipPath = "url(#clipPath)";
+  } 
+}
+
+
+window.addEventListener('scroll', lookForStickyExclude)

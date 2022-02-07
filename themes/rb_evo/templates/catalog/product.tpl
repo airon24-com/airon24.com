@@ -52,7 +52,7 @@
     <meta content="{$product.url}">
 
     <div class="row js-product-container">
-      <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-sp-12">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-sp-12">
         {block name='page_content_container'}
         <section class="page-content" id="content">
           {block name='page_content'}
@@ -71,7 +71,8 @@
         </section>
         {/block}
       </div>
-      <div class="detail-padding-left col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-sp-12">
+      <div class="detail-padding-left col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-sp-12 sticky">
+      <div class="sticky-content">
         {block name='product_discounts'}
         {hook h='displayNextPrevProduct' product=$product}
         {/block}
@@ -93,6 +94,9 @@
         {/block}
 
         <div class="product-information">
+
+        	{$product.description nofilter}
+        	
           
 
           {if $product.is_customizable && count($product.customizations.fields)}
@@ -144,35 +148,12 @@
 
 <p><a class="primary-color" href="#" target="_self" title="Sprawdź warunki usługi">Sprawdź cennik i warunki świadczenia usług</a></p>
 </div>
-                                <div class="flex flex-wrap mx-n10">
-                                    <div class="col-6">
-                                    <div class="m-checkable-tile">
-                                        <input id="extraServiceForm-1_2" type="radio" value="1_2" name="service_ids[1][]">
-                                        <label for="extraServiceForm-1_2" class="m-checkable-tile-inner-box">
-                                            <p class="fs-16px text-left mb-5"><b>Montaż B2C</b></p>
-                                            <p class="fs-14px text-left"><b class="fs-18px">3 945,46</b> zł</p>
-                                            <div class="fs-12px gray-3 text-left mt-5"><p>klimatyzator z&nbsp;montażem&nbsp;dla konsumenta (8% VAT)</p>
-</div>   
-                                        </label>
-                                    </div>
-                                </div><div class="col-6">
-                                    <div class="m-checkable-tile">
-                                        <input id="extraServiceForm-1_3" type="radio" value="1_3" name="service_ids[1][]">
-                                        <label for="extraServiceForm-1_3" class="m-checkable-tile-inner-box">
-                                            <p class="fs-16px text-left mb-5"><b>Montaż B2B</b></p>
-                                            <p class="fs-14px text-left"><b class="fs-18px">4 493,49</b> zł</p>
-                                            <div class="fs-12px gray-3 text-left mt-5"><p>klimatyzator&nbsp;z montażem&nbsp;dla firmy (23% VAT)</p>
-</div>   
-                                        </label>
-                                    </div>
                                 </div>
                                 </div>
-                                <label class="c-radio primary-theme flex align-center">
-                                <input class="c-radio-input" type="radio" value="1_1" name="service_ids[1][]">
-                                <span class="c-radio-label fs-14px">Bez montażu (wymagane oświadczenie z nr F-GAZ instalatora) (2 899,00 zł)</span>
-                            </label>
-                            </div>
-                        </div>
+
+
+                                
+                                
 
                   {block name='product_add_to_cart'}
                     {include file='catalog/_partials/product-add-to-cart.tpl'}
@@ -206,7 +187,7 @@
           {/block}
         </div>
       </div>
-
+      </div>
       <div class="col-xs-12">
         {block name='product_tabs'}
         {include file='catalog/_partials/product-tab.tpl'}
