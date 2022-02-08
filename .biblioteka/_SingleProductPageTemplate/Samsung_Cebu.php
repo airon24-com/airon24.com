@@ -30,7 +30,7 @@
 
 	<div class="wrapper">
 
-		<section class="sec-block">
+		<div class="section sec-block">
 			<div class="fixed-bg bg-light"></div>
 			<div class="container">
 				<div class="services_section bg-none">
@@ -71,9 +71,9 @@
 				</div>
 				<!--services_section end-->
 			</div>
-		</section>
+		</div>
 
-		<section class="sec-block" style="padding: 120px 0px 50px 0px">
+		<div class="section sec-block" style="padding: 120px 0px 50px 0px">
 			<div class="container">
 				<div class="shop-other-infos">
 					<div class="shop-infos-list" style="margin-bottom: 50px;">
@@ -87,9 +87,9 @@
 					<!--shop-infos-list endd-->
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<section class="sec-block" style="padding: 0px 0px 100px 0px" id="opis">
+		<div class="section sec-block" style="padding: 0px 0px 100px 0px" id="opis">
 			<div class="container">
 				<div class="about-block2">
 					<div class="row align-items-center">
@@ -133,9 +133,9 @@
 
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<section class="sec-block half-bg-rt">
+		<div class="section sec-block half-bg-rt">
 			<div class="fixed-bg bg15"></div>
 			<div class="watt-section">
 				<div class="container">
@@ -149,9 +149,9 @@
 				</div>
 			</div>
 			<!--watt-section end-->
-		</section>
+		</div>
 
-		<section class="sec-block" style="padding: 100px 0px 100px 0px" id="opis">
+		<div class="section sec-block" style="padding: 100px 0px 100px 0px" id="opis">
 			<div class="container">
 				<div class="about-block2">
 					<div class="row align-items-center">
@@ -231,7 +231,7 @@
 
 				</div>
 			</div>
-		</section>
+		</div>
 
 
 		<style>
@@ -240,7 +240,7 @@
 			}
 		</style>
 
-		<section class="sec-block lg-pb-0" style="padding: 100px 0 150px 0 !important">
+		<div class="section sec-block lg-pb-0" style="padding: 100px 0 150px 0 !important">
 			<div class="fixed-bg bg18"></div>
 			<div class="container">
 				<div class="row">
@@ -255,9 +255,9 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<section class="sec-block pb-0" style="padding: 50px 0 0 0 !important">
+		<div class="section sec-block pb-0" style="padding: 50px 0 0 0 !important">
 			<div class="container">
 				<div class="fingertips-section">
 					<div class="row align-items-center">
@@ -298,9 +298,9 @@
 				</div>
 				<!--fingertips-section end-->
 			</div>
-		</section>
+		</div>
 
-		<section class="sec-block" style="padding: 100px 0 150px 0">
+		<div class="section sec-block" style="padding: 100px 0 150px 0">
 			<div class="fixed-bg"></div>
 			<div class="container">
 				<div class="videeo-sec v-serv overlay">
@@ -312,9 +312,9 @@
 				</div>
 				<!--videeo-sec end-->
 			</div>
-		</section>
+		</div>
 
-		<section class="sec-block pb-0 bottom-white-overlay" id="specyfikacja">
+		<div class="section sec-block pb-0 bottom-white-overlay" id="specyfikacja">
 			<div class="fixed-bg dark-bg"></div>
 			<div class="container">
 				<div class="about-block2 hp21">
@@ -338,12 +338,10 @@
 				</div>
 				<!--about-block2 end-->
 			</div>
-		</section>
+		</div>
 
-		<section class="sec-block pb-120">
-
+		<div class="section sec-block pb-120">
 			<div class="container header_sticky">
-
 				<div class="row">
 
 					<div class="col-lg-12">
@@ -352,176 +350,7 @@
 						</div>
 					</div>
 
-					<style>
-						.container table {
-							border-collapse: collapse;
-							overflow: hidden;
-
-							margin: 0 auto;
-							-webkit-border-radius: 15px;
-							-moz-border-radius: 15px;
-							border-radius: 15px;
-
-							-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0 10px;
-							-moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
-							box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
-
-							box-shadow-bottom-right-radius: 15px;
-							box-shadow-bottom-left-radius: 15pxm;
-							box-shadow-top-right-radius: 15px;
-							box-shadow-top-left-radius: 15px;
-
-						}
-
-						.container th,
-						.container td {
-							padding: 15px;
-							background-color: rgba(255, 255, 255, 0.2);
-							color: #000;
-							border: 1px solid;
-						}
-
-						.container th {
-							text-align: left;
-						}
-
-						.container thead th {
-							background-color: #a0c5f4;
-							color: #fff;
-							font-weight: 600;
-						}
-
-						.container tbody tr:hover {
-							background-color: rgba(229, 239, 252, 0.5);
-						}
-
-						.container tbody td {
-							position: relative;
-						}
-
-						.container tbody td:hover:before {
-							content: "";
-							position: absolute;
-							left: 0;
-							right: 0;
-							top: -9999px;
-							bottom: 0px;
-							background-color: rgba(229, 239, 252, 0.5);
-							z-index: -1;
-						}
-
-						.comparison .package {
-							width: 50%;
-						}
-
-						.comparison {
-							border-radius: 15px !important;
-						}
-
-						.comparison thead tr th:nth-child(1) {
-							width: 30%;
-						}
-
-						.comparison tbody tr:nth-child(odd) {
-							display: none;
-						}
-
-						.comparison tbody tr td,
-						.comparison thead tr th {
-							border-right: 0;
-							border-left: 1;
-							text-align: center;
-							padding: 20px;
-						}
-
-						.comparison tbody tr td {
-							border-color: rgba(0, 0, 0, 0.1) !important;
-							border-radius: 15px !important;
-						}
-
-						.comparison tbody tr td:first-child {
-							text-align: left;
-							font-size: 14px;
-						}
-
-						.comparison thead tr th:not(:first-child) h4 {
-							font-size: 28px;
-							margin: 0;
-						}
-
-						.comparison thead tr th:nth-child(1) h4 {
-							font-size: 14px;
-							text-transform: uppercase;
-							text-align: left;
-							margin: 0;
-						}
-
-
-						.comparison thead tr th .dolla {
-							font-size: 13px;
-							color: #686868;
-							font-weight: 100;
-							margin-right: 5px;
-							position: relative;
-							font-weight: 700;
-							top: -5px;
-						}
-
-						.comparison thead tr.pricing th p {
-							margin: 0;
-							font-size: 14px;
-							margin-left: 5px;
-						}
-
-						.comparison tbody tr:last-child td {
-							color: #000;
-							border-radius: 15px !important;
-						}
-
-						@media (max-width: 767px) {
-
-							.comparison {
-								width: 100% !important;
-							}
-
-							.comparison td:first-child,
-							.comparison th:first-child {
-								display: none;
-							}
-
-							.comparison tbody tr:nth-child(odd) {
-								display: table-row;
-							}
-
-							.comparison thead tr th:not(:first-child) h4 {
-								font-size: 20px;
-							}
-
-							.comparison tbody tr td,
-							.comparison thead tr th {
-								font-size: 10px;
-								padding: 10px 2px 10px 2px;
-							}
-
-							.comparison thead tr th:nth-child(1) {
-								width: 30%;
-							}
-
-							.comparison thead tr th:not(:first-child) p {
-								font-size: 11px;
-							}
-						}
-
-						.comparison .header_Table {
-							position: sticky;
-							top: 0;
-							z-index: 1;
-							border-radius: 15px;
-						}
-					</style>
-
 					<div class="container stick_Table" id="header02">
-
 						<table class="comparison" border="0" cellspacing="1">
 
 							<thead class="header_Table">
@@ -1106,13 +935,11 @@
 							</tbody>
 
 						</table>
-
 					</div>
 
 				</div>
-
 			</div>
-		</section>
+		</div>
 
 		<?php require_once 'custom_photo_single_product_page.php' ?>
 
@@ -1297,11 +1124,11 @@
 				</div>
 
 			</div>
-		</section>
+	</div>
 
-		<!-- ZOBACZ NASZE POZOSTAŁE URZĄDZENIA LINK -->
+	<!-- ZOBACZ NASZE POZOSTAŁE URZĄDZENIA LINK -->
 
-		<div class="line line-right bottom right" style="z-index: 10000 !important; position: relative"></div>
+	<div class="line line-right bottom right" style="z-index: 10000 !important; position: relative"></div>
 
 
 	</div>
