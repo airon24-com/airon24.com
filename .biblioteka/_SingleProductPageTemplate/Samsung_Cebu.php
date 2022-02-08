@@ -340,7 +340,7 @@
 			</div>
 		</div>
 
-		<div class="section sec-block pb-120">
+		<div class="section sec-block" style="padding-bottom: 100px">
 			<div class="container header_sticky">
 				<div class="row">
 
